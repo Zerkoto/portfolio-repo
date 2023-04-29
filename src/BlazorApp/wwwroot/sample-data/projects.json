@@ -1,22 +1,22 @@
 [
   {
-    "title": "10 Things To Know About Azure Static Web Apps 🎉",
-    "description": "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+    "title": "Tungsten Network",
+    "description": "Worked for an Electronic-invoicing global marketplace for suppliers and buyers. Supported 2 Web portals, back-end applications and FTP processes for EDI files",
+    "url": "https://www.tungsten-network.com/"
   },
   {
-    "title": "Web Development for Beginners",
-    "description": "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    "url": "https://github.com/microsoft/web-dev-for-beginners"
+    "title": "Carebuilder",
+    "description": "Contributed towards the website's development and the customers manual module. Supported more than 10 healthcare products for hospitals and other clients'",
+    "url": "https://www.carebuilder.com/"
   },
   {
-    "title": "My Resume Site",
-    "description": "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+    "title": "Ricardo",
+    "description": "Supported the SharePoint OnPremis environment for a global engineering, environmental and strategic company, based on 3 server farms in the UK, USA and China",
+    "url": "https://www.ricardo.com/en"
   },
   {
-    "title": "GitHub Codespaces and github.dev",
-    "description": "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+    "title": "Swift - Postal services",
+    "description": "Developed and supported Postal services across 7 government institutions. Developed MaltaPost's website services such as Easipik, SendOn, Track&Trace and PMS'",
+    "url": "https://www.maltapost.com/"
   }
 ]

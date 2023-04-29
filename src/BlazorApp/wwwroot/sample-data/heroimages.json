@@ -1,17 +1,17 @@
 [
   {
     "name": "home",
-    "src": "images/me.jpg",
-    "alt": "woman holding laptop standing by server room with glass wall"
+    "src": "images/photo.png",
+    "alt": "Giga Chad looking at the sunset"
   },
   {
     "name": "about",
-    "src": "images/mosaic.svg",
-    "alt": "purple and blue abstract background"
+    "src": "images/building.jpg",
+    "alt": "Skyscrapper building and the sky"
   },
   {
     "name": "portfolio",
-    "src": "images/design-desk.jpeg",
+    "src": "images/portfolio-laptops.jpg",
     "alt": "desktop with books and laptop"
   }
 ]
