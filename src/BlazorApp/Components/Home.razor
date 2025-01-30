@@ -15,7 +15,7 @@
     }
     </div>
     <div style="position: absolute; bottom: 8rem; left: 50%;">
-        <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem;" alt="scroll down" />
+        <img src="images/down-arrow.svg" style="height: 3rem; width: 3rem; cursor: pointer;" alt="scroll down" @onclick="ScrollToPageBottom" />
     </div>
 </section>
 
@@ -33,5 +33,10 @@
     {
         property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "home");
+    }
+    @inject IJSRuntime JS // Make sure you have 'using Microsoft.JSInterop;' at the top if needed
+    private async Task ScrollToPageBottom()
+    {
+        await JS.InvokeVoidAsync("scrollToBottom"); 
     }
 }

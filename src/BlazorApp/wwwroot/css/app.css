@@ -131,8 +131,9 @@ a:hover {
 
 .portfolio-container {
   display: flex;
-  flex-direction: row;
-  padding-top: 3rem;
+  flex-direction: column; /* so hero sits above the grid */
+  align-items: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 420px) {
@@ -142,8 +143,7 @@ a:hover {
 }
 
 .portfolio-hero {
-  max-width: 40%;
-  align-self: center;
+  margin-bottom: 2rem; /* add spacing below the hero image */
 }
 
 @media screen and (max-width: 420px) {
@@ -167,6 +167,28 @@ a:hover {
     grid-template-columns: 330px 300px;
     grid-gap: 20px;
   }
+}
+
+.portfolio-container .container {
+  /* Use CSS Grid to arrange your boxes in equal columns */
+  display: grid;
+  /* Adjust minmax if needed for your desired column size */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem; /* space between boxes */
+  max-width: 1200px; /* optional: restrict width for a cleaner look */
+  width: 100%;
+}
+
+/* Make the very last item span 2 columns */
+.portfolio-container .container .box:last-of-type {
+  grid-column: span 2;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
 
 .container .box {

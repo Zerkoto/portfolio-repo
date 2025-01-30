@@ -11,12 +11,17 @@
   },
   {
     "title": "Ricardo",
-    "description": "Supported the SharePoint OnPremis environment for a global engineering, environmental and strategic company, based on 3 server farms in the UK, USA and China",
+    "description": "Supported the SharePoint OnPremise environment for a global automotive engineering, environmental and strategic company, based on 3 server farms in the UK, USA and China",
     "url": "https://www.ricardo.com/en"
   },
   {
     "title": "Swift - Postal services",
-    "description": "Developed and supported Postal services across 7 government institutions. Developed MaltaPost's website services such as Easipik, SendOn, Track&Trace and PMS'",
+    "description": "Developed and supported Postal & Online payments services across 7 government institutions. SME on MaltaPost's website services such as Easipik, SendOn, Track&Trace and PMS'",
     "url": "https://www.maltapost.com/"
+  },
+  {
+    "title": "Man Group - World's Largest Hedge Fund",
+    "description": "Provide comprehensive technical and operational support across the entire trading lifecycle—from quantitative signal creation and trade execution, through booking and settlement, to final post-trade reconciliation. Collaborate closely with quant teams, traders, and operations to ensure smooth, efficient, and accurate workflows. Contribute to system enhancements, troubleshoot critical issues in real time, and uphold robust controls within a fast-paced, data-driven hedge fund environment.",
+    "url": "https://www.man.com/"
   }
 ]

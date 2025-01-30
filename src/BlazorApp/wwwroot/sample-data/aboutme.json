@@ -1,13 +1,13 @@
 {
-  "description": "As a seasoned software solutions engineer with over 5 years of experience, I have a proven track record of designing and implementing robust and scalable software solutions. I specialize in SQL database solutions such as: Development of Stored procedures, automation of SQL Jobs, embedded source code algorithms, and dealing with backup & restoration processes. My skills in agile project management, continuous integration and delivery, and DevOps practices have helped me deliver high-quality solutions on-time and within budget.",
+  "description": "I'm a Senior Solutions Engineer with 6+ years of experience across diverse industries, including hedge-fund support and financial services. Skilled at delivering efficient, stable solutions and ensuring smooth user experiences.",
   "skills": [
-    "Web design & User experience development",
-    "Experience with Microsoft applications, such as Azure, Office 365, SharePoint, Teams, Dynamics 365, and Power Platform",
-    "Software development and Manual QA regression testing",
-    "Experience with E-invoicing software, Till-transactions programs, audit & accounting software applications and web payment integrations",
-    "Experience with IT/application support in the Pharma & Healthcare industries, Finances, E-Business"
+    "Object-oriented programming (C#, .NET, JAVA)",
+    "SQL database design & automation",
+    "Web design & user experience",
+    "Manual QA & testing",
+    "Microsoft enterprise solutions (SharePoint, Teams, etc.)"
   ],
-  "detailOrQuote": "I am a strong communicator, both with technical and non-technical stakeholders, and have experience leading cross-functional teams. My problem-solving skills, attention to detail, and ability to think critically allow me to quickly identify and address complex issues.",
-  "detailOrQuote2": "I am passionate about staying up-to-date with the latest industry trends and technologies, and I continuously seek to learn and grow my skills. I hold a Bachelor's degree in Computer Science, a Master's degree in E-Management, and have obtained MS Azure certifications.",
-  "detailOrQuote3": "If you're looking for a software solutions engineer who can lead your team to success and deliver innovative solutions, look no further. Contact me today to learn more about how I can help your organization achieve its goals."
+  "detailOrQuote": "I thrive in data-driven environments where I can quickly identify, troubleshoot, and resolve complex issues. My communication skills help bridge the gap between technical and non-technical teams.",
+  "detailOrQuote2": "I hold a Bachelor's degree in Computer Science and a Master's degree in E-Management. Always seeking new knowledge, I stay current with emerging technologies.",
+  "detailOrQuote3": "If you're looking for a solutions engineer who can bring fresh ideas and proven expertise, let's connect. I'd love to help your organization grow and succeed."
 }
