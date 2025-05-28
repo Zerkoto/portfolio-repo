@@ -21,7 +21,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.410' # Specify the version required for your application.
+          dotnet-version: '8.0.408' # Specify the version required for your application.
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
