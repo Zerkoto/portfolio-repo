@@ -5,3 +5,14 @@
   gap: 2.5rem;
   padding: 5rem 0 3rem;
 }
+
+@media (max-width: 700px) {
+  #contact {
+    padding: 2rem 0 1.5rem;
+    gap: 1.2rem;
+  }
+  #contact > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

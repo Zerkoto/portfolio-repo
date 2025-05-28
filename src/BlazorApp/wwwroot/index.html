@@ -40,9 +40,15 @@
     <script src="_framework/blazor.webassembly.js"></script>
     <script>
         function scrollToBottom() {
-          window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+          var aboutSection = document.getElementById('about');
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+          } else {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+          }
         }
-      </script>
+        window.scrollToBottom = scrollToBottom;
+    </script>
 </body>
 
 </html>

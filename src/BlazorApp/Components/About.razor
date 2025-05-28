@@ -4,7 +4,7 @@
         <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
     }
     <h2>About Myself</h2>
-    <div style="background-color: white; width: 50%; padding: 4rem; margin: 3rem auto; text-align: center;">
+    <div class="about-content">
     @if (aboutme is null)
     {
         <p><em>Loading...</em></p>
@@ -13,16 +13,16 @@
     {
         <p class="large">@aboutme.Description</p>
         <hr />
-        <ul style="text-align: left; columns: 2; font-size: 1.25rem; margin: 2rem 3rem; gap: 3rem;">
+        <ul class="skills-list">
         @foreach (var skill in aboutme.Skills)
         {
             <li key="@skill">@skill</li>
         }
         </ul>
         <hr />
-        <p style="padding: 1rem 3rem 0;">@aboutme.DetailOrQuote</p>
-        <p style="padding: 1rem 3rem 0;">@aboutme.DetailOrQuote2</p>
-        <p style="padding: 1rem 3rem 0;">@aboutme.DetailOrQuote3</p>
+        <p class="about-detail">@aboutme.DetailOrQuote</p>
+        <p class="about-detail">@aboutme.DetailOrQuote2</p>
+        <p class="about-detail">@aboutme.DetailOrQuote3</p>
     }
     </div>
 </section>
