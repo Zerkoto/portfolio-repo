@@ -27,6 +27,8 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: '7.x'
+    
+    
 
     # - name: Set basepath on index.html
     #   shell: pwsh
@@ -71,6 +73,12 @@ jobs:
     - name: Upload artifact for web
       uses: actions/upload-pages-artifact@v1
       with:
+        path: published/wwwroot
+
+    - name: Upload artifact for web
+      uses: actions/upload-artifact@v3
+      with:
+        name: web-artifact
         path: published/wwwroot
 
   deploy:
