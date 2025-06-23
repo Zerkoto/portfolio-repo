@@ -1,3 +1,8 @@
+@using Microsoft.JSInterop
+@using System.Net.Http.Json
+@using BlazorApp.Models
+@using BlazorApp.Services
+
 <section class="dark" id="home">
     @if (hero is not null)
     {
@@ -34,9 +39,12 @@
         property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
         hero = await HeroImageService.GetHeroAsync(img => img.Name is "home");
     }
-    @inject IJSRuntime JS // Make sure you have 'using Microsoft.JSInterop;' at the top if needed
+
+    [Inject]
+    private IJSRuntime JS { get; set; } = default!;
+
     private async Task ScrollToPageBottom()
     {
-        await JS.InvokeVoidAsync("scrollToBottom"); 
+        await JS.InvokeVoidAsync("scrollToBottom");
     }
 }
