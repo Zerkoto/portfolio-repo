@@ -70,6 +70,14 @@ jobs:
       run: |
         dotnet publish src/BlazorApp -c Release -o published
 
+    - name: Check for symlinks in publish output
+      shell: bash
+      run: |
+        if find published/wwwroot -type l | grep .; then
+          echo "Symlinks detected in publish output. Please remove them before deployment."
+          exit 1
+        fi
+
     - name: Upload artifact for web
       uses: actions/upload-artifact@v4
       with:
