@@ -496,6 +496,22 @@ body {
   }
 }
 
+@media (max-width: 700px) and (orientation: landscape) {
+  .home-content {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1.2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .portfolio-hero {
+    margin-bottom: 0.8rem;
+  }
+}
+
 /* Footer: always visible, professional, responsive */
 #contact {
   display: flex;
@@ -542,4 +558,9 @@ img.social-icon:hover {
   #contact > div {
     gap: 1.2rem;
   }
+}
+
+body.header-hidden #header,
+body.header-visible #header {
+  transition: none !important;
 }

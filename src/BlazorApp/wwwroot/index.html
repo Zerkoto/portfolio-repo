@@ -50,25 +50,18 @@
         window.scrollToBottom = scrollToBottom;
     </script>
     <script>
-        // Hide header on scroll down, show on scroll up
+        // Hide header on scroll down, show on scroll up (collapse instantly)
         let lastScrollY = window.scrollY;
-        let ticking = false;
         function onScroll() {
-            if (!ticking) {
-                window.requestAnimationFrame(function () {
-                    const currentY = window.scrollY;
-                    if (currentY > lastScrollY && currentY > 60) {
-                        document.body.classList.add('header-hidden');
-                        document.body.classList.remove('header-visible');
-                    } else {
-                        document.body.classList.add('header-visible');
-                        document.body.classList.remove('header-hidden');
-                    }
-                    lastScrollY = currentY;
-                    ticking = false;
-                });
-                ticking = true;
+            const currentY = window.scrollY;
+            if (currentY > lastScrollY && currentY > 10) {
+                document.body.classList.add('header-hidden');
+                document.body.classList.remove('header-visible');
+            } else {
+                document.body.classList.add('header-visible');
+                document.body.classList.remove('header-hidden');
             }
+            lastScrollY = currentY;
         }
         window.addEventListener('scroll', onScroll, { passive: true });
         document.body.classList.add('header-visible');

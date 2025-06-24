@@ -14,13 +14,13 @@ body.header-hidden #header {
   top: -60px !important;
   opacity: 0;
   pointer-events: none;
-  transition: top 0.3s, opacity 0.3s;
+  transition: none !important;
 }
 body.header-visible #header {
   top: 0 !important;
   opacity: 1;
   pointer-events: auto;
-  transition: top 0.3s, opacity 0.3s;
+  transition: none !important;
 }
 
 @media (max-width: 700px) {
