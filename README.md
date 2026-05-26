@@ -2,6 +2,15 @@
 
 # .NET (Blazor) Portfolio Site with GitHub Codespaces
 
+## Current Project Documentation
+
+This repository is the deployed portfolio site for Kristiyan Petrov at [https://www.kpetrov.z.bg/](https://www.kpetrov.z.bg/).
+
+- Future agent work should begin with [AGENTS.md](./AGENTS.md) and the latest entry in [docs/HANDOFF.md](./docs/HANDOFF.md).
+- Hosting, Azure DNS, and GitHub deployment routing are documented in [docs/HOSTING.md](./docs/HOSTING.md).
+
+The remainder of this README is the original portfolio-template customization guide.
+
 _Create, customize and deploy your own portfolio website in minutes._ ✨
 
 In this template repository we have the development environment and base set and ready to go. So that you can immediately launch the Codespaces to customize with no setup.
