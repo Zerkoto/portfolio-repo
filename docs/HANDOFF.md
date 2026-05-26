@@ -31,6 +31,7 @@ Read the newest entry first when resuming work. Git history remains the authorit
 - Used parallel research/audit agents for official Blazor/Azure practices, accessibility/design practices, current implementation flaws, and privacy-conscious CV alignment; avoided publishing unsupported role, education, certification, or trading-scope claims.
 - Verified that .NET 10 is not installed on the current workstation. Updated the current .NET 8 Blazor packages to the supported `8.0.27` servicing level; because .NET 8 approaches end of support on 2026-11-10, a separately validated .NET 10 LTS migration is recommended after installing its SDK.
 - Validated `dotnet restore`, `dotnet build .\MyPortfolio.sln --no-restore`, JSON parsing, and `dotnet publish -c Release`; checked the local browser at desktop and 390px/320px mobile widths in both themes, including a direct `/#contact` visit and refreshed theme stylesheet, with no client errors or horizontal overflow.
+- Pushed branch `codex/document-hosting-and-agent-context` to GitHub. Open its pull request from `https://github.com/Zerkoto/portfolio-repo/pull/new/codex/document-hosting-and-agent-context` when authenticated.
 - GitHub repository settings could not be mutated from the available browser session because it is not authenticated; after merge, an authenticated repository owner must disable GitHub Pages to withdraw the stale public mirror.
 
 ### 2026-05-26 - Agent Context And Hosting Trace
