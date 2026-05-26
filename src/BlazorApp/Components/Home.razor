@@ -1,50 +1,30 @@
-@using Microsoft.JSInterop
-@using System.Net.Http.Json
-@using BlazorApp.Models
-@using BlazorApp.Services
+@inject PortfolioContentService Content
 
-<section class="dark" id="home">
-    @if (hero is not null)
-    {
-        <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
-    }
-    <div class="home-content">
+<section class="hero section" id="home" aria-labelledby="hero-heading">
+    <div class="hero-content">
     @if (property is null)
     {
         <p><em>Loading...</em></p>
     }
     else
     {
-        <h1>@property.Name</h1>
-        <h2>@property.Title</h2>
+        <p class="hero-eyebrow">@property.HeroEyebrow</p>
+        <h1 id="hero-heading">@property.Name</h1>
+        <p class="hero-title">@property.Title</p>
+        <p class="hero-summary">@property.HeroSummary</p>
+        <nav class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="@property.PrimaryCtaHref">@property.PrimaryCtaLabel</a>
+            <a class="button secondary" href="@property.SecondaryCtaHref">@property.SecondaryCtaLabel</a>
+        </nav>
     }
-    </div>
-    <div class="down-arrow-container">
-        <img src="images/down-arrow.svg" class="down-arrow" alt="scroll down" @onclick="ScrollToPageBottom" />
     </div>
 </section>
 
 @code {
-    [Parameter, EditorRequired]
-    public required HttpClient Http { get; set; }
-
-    [Parameter, EditorRequired]
-    public required HeroImageService HeroImageService { get; set; }
-
     private SiteProperties? property;
-    private HeroImage? hero;
 
     protected override async Task OnInitializedAsync()
     {
-        property = await Http.GetFromJsonAsync<SiteProperties>("sample-data/siteproperties.json");
-        hero = await HeroImageService.GetHeroAsync(img => img.Name is "home");
-    }
-
-    [Inject]
-    private IJSRuntime JS { get; set; } = default!;
-
-    private async Task ScrollToPageBottom()
-    {
-        await JS.InvokeVoidAsync("scrollToBottom");
+        property = await Content.GetSitePropertiesAsync();
     }
 }

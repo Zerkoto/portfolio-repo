@@ -1,12 +1,25 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
-    <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
-    </Found>
-    <NotFound>
-        <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
-        </LayoutView>
-    </NotFound>
-</Router>
+<ErrorBoundary>
+    <ChildContent>
+        <Router AppAssembly="@typeof(App).Assembly">
+            <Found Context="routeData">
+                <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+                <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+            </Found>
+            <NotFound>
+                <PageTitle>Not found | Kristiyan Petrov</PageTitle>
+                <LayoutView Layout="@typeof(MainLayout)">
+                    <section class="status-panel" role="alert">
+                        <h1>Page not found</h1>
+                        <p>The requested portfolio page is not available.</p>
+                    </section>
+                </LayoutView>
+            </NotFound>
+        </Router>
+    </ChildContent>
+    <ErrorContent>
+        <main class="status-panel" role="alert">
+            <h1>Unable to display the portfolio</h1>
+            <p>Please reload the page or contact Kristiyan through the professional links in the published profile.</p>
+        </main>
+    </ErrorContent>
+</ErrorBoundary>

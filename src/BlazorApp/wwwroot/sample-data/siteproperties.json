@@ -1,12 +1,13 @@
 {
   "name": "Kristiyan Petrov",
-  "title": "Web Designer, Content Creator & Software solutions engineer",
+  "title": "Investment Operations and Application Support",
+  "heroEyebrow": "Python | SQL | Automation | Technical Delivery",
+  "heroSummary": "I work where investment operations and application support meet, using practical technology to support reliable workflows and clear outcomes.",
+  "primaryCtaLabel": "View experience",
+  "primaryCtaHref": "#experience",
+  "secondaryCtaLabel": "Get in touch",
+  "secondaryCtaHref": "#contact",
   "email": "kpetrov_business@outlook.com",
-  "devDotTo": null,
   "gitHub": "Zerkoto/portfolio-repo",
-  "instagram": "zerkoto",
-  "linkedIn": "zerkoto",
-  "medium": "",
-  "twitter": "zerkoto",
-  "youTube": "@zerkoto"
+  "linkedIn": "zerkoto"
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Professional Focus",
+    "title": "Investment Operations Support",
+    "description": "Supporting operational workflows with careful investigation, application knowledge, and clear coordination around issues and improvements.",
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "category": "Technical Practice",
+    "title": "Python, SQL and Automation",
+    "description": "Applying scripting, data querying, and automation thinking to make repeatable work clearer and more reliable.",
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "category": "Delivery",
+    "title": "Application Support and Change",
+    "description": "Working across technical and operational needs to support applications and deliver practical improvements.",
+    "url": "",
+    "linkLabel": ""
+  },
+  {
+    "category": "Selected Personal Project",
+    "title": "Neutron E-Commerce Project",
+    "description": "A personal Django e-commerce project focused on building and presenting a usable web application.",
+    "url": "",
+    "linkLabel": ""
+  }
+]

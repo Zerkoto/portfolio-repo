@@ -1,13 +1,18 @@
 {
-  "description": "I'm a Senior Solutions Engineer with 6+ years of experience across diverse industries, including hedge-fund support and financial services. Skilled at delivering efficient, stable solutions and ensuring smooth user experiences.",
-  "skills": [
-    "Object-oriented programming (C#, .NET, JAVA)",
-    "SQL database design & automation",
-    "Web design & user experience",
-    "Manual QA & testing",
-    "Microsoft enterprise solutions (SharePoint, Teams, etc.)"
-  ],
-  "detailOrQuote": "I thrive in data-driven environments where I can quickly identify, troubleshoot, and resolve complex issues. My communication skills help bridge the gap between technical and non-technical teams.",
-  "detailOrQuote2": "I hold a Bachelor's degree in Computer Science and a Master's degree in E-Management. Always seeking new knowledge, I stay current with emerging technologies.",
-  "detailOrQuote3": "If you're looking for a solutions engineer who can bring fresh ideas and proven expertise, let's connect. I'd love to help your organization grow and succeed."
+  "introduction": "I bring operational attention and technical problem-solving together, with a focus on dependable application support and useful improvements.",
+  "evidence": "My work draws on Python, SQL, automation, and technical delivery to investigate issues, reduce repetition, and communicate practical solutions.",
+  "focusAreas": [
+    {
+      "title": "Operational Support",
+      "description": "Investigating issues methodically and helping keep workflows dependable for the people who use them."
+    },
+    {
+      "title": "Automation and Data",
+      "description": "Using Python and SQL to understand recurring tasks and shape clearer, more consistent ways of working."
+    },
+    {
+      "title": "Technical Delivery",
+      "description": "Turning requirements and support needs into maintainable application improvements and clear communication."
+    }
+  ]
 }

@@ -1,46 +1,35 @@
-<section class="light" id="about">
-    @if (hero is not null)
-    {
-        <img class="background" src="@(hero.Src)" alt="@(hero.Alt)" />
-    }
-    <h2>About Myself</h2>
-    <div class="about-content">
-    @if (aboutme is null)
+@inject PortfolioContentService Content
+
+<section class="section about" id="about" aria-labelledby="about-heading">
+    <header class="section-heading">
+        <p class="section-kicker">About</p>
+        <h2 id="about-heading">Support grounded in practical delivery</h2>
+    </header>
+    @if (aboutMe is null)
     {
         <p><em>Loading...</em></p>
     }
     else
     {
-        <p class="large">@aboutme.Description</p>
-        <hr />
-        <ul class="skills-list">
-        @foreach (var skill in aboutme.Skills)
-        {
-            <li key="@skill">@skill</li>
-        }
-        </ul>
-        <hr />
-        <p class="about-detail">@aboutme.DetailOrQuote</p>
-        <p class="about-detail">@aboutme.DetailOrQuote2</p>
-        <p class="about-detail">@aboutme.DetailOrQuote3</p>
+        <p class="section-intro">@aboutMe.Introduction</p>
+        <p class="about-detail">@aboutMe.Evidence</p>
+        <div class="focus-grid">
+            @foreach (var focusArea in aboutMe.FocusAreas)
+            {
+                <article class="card focus-card">
+                    <h3>@focusArea.Title</h3>
+                    <p>@focusArea.Description</p>
+                </article>
+            }
+        </div>
     }
-    </div>
 </section>
 
 @code {
-    [Parameter, EditorRequired]
-    public required HttpClient Http { get; set; }
-
-    [Parameter, EditorRequired]
-    public required HeroImageService HeroImageService { get; set; }
-
-    private AboutMe? aboutme;
-    private HeroImage? hero;
+    private AboutMe? aboutMe;
 
     protected override async Task OnInitializedAsync()
     {
-        aboutme = await Http.GetFromJsonAsync<AboutMe>("sample-data/aboutme.json");
-        hero = await HeroImageService.GetHeroAsync(img => img.Name is "about");
-
+        aboutMe = await Content.GetAboutMeAsync();
     }
 }

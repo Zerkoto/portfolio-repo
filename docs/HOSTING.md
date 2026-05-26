@@ -100,13 +100,13 @@ The application itself is a static-client deployment:
 | --- | --- |
 | Runtime | .NET 8 Blazor WebAssembly downloaded and executed in the visitor's browser |
 | Entry point | `src/BlazorApp/wwwroot/index.html` starts `_framework/blazor.webassembly.js` |
-| Page composition | `Pages/Index.razor` renders `Header`, `Home`, `About`, `Portfolio`, and `Footer` components |
-| Portfolio content | Components load JSON from `wwwroot/sample-data` through same-origin `HttpClient` requests |
+| Page composition | `Shared/MainLayout.razor` owns stable navigation/footer; `Pages/Index.razor` renders `Home`, `About`, and `Experience` sections |
+| Portfolio content | `PortfolioContentService` caches same-origin JSON reads from `wwwroot/sample-data` for the display components |
 | Static assets | CSS, images, icons, and generated WebAssembly framework files |
 | External browser dependency | Google Fonts imported from `fonts.googleapis.com` |
 | Server/API | None identified; no `Api` directory or backend project exists in the repository |
 
-The Azure workflow still contains the template option `api_location: "Api"`, but no such API is present. The published app is therefore portable to any provider capable of serving static files over HTTPS. Azure Static Web Apps is the current production provider because it is configured, working, and integrated with the custom domain and deployment flow, not because Blazor requires Azure.
+The published app is portable to any provider capable of serving static files over HTTPS. Azure Static Web Apps is the current production provider because it is configured, working, and integrated with the custom domain and deployment flow, not because Blazor requires Azure. The obsolete template `api_location` setting has been removed from the current branch's Azure workflow configuration.
 
 ## Deployment From GitHub To Azure
 
@@ -207,6 +207,12 @@ Recommended actions, in order:
 5. Disable GitHub Pages in GitHub repository settings after the workflow removal. Deleting only the workflow will stop future attempts but can leave the old public Pages artifact online.
 6. Treat `https://www.kpetrov.z.bg/` as the canonical public URL; avoid publishing or linking to the Azure default hostname.
 
+Implementation status on the current documentation/redesign branch:
+
+- `.github/workflows/publish-gh-pages.yml` has been deleted locally and will stop future failed Pages jobs once merged into `main`.
+- The remaining Azure workflow has been simplified to remove the nonexistent API path, use explicit least-privilege permissions, and update to `actions/checkout@v6` and `actions/setup-dotnet@v5`, as shown by their current official repositories.
+- GitHub Pages must still be disabled through authenticated repository settings after this change is merged, otherwise the stale January 2025 mirror can remain publicly reachable.
+
 ## Alternative Consolidation Options
 
 | Option | Benefit | Cost/risk | Recommendation |
@@ -217,6 +223,10 @@ Recommended actions, in order:
 | Move website files to a SuperHosting web-hosting product | One vendor for domain and hosting, if such a paid hosting plan exists | No hosting plan is currently evidenced; requires new deployment mechanism and migration | Not recommended without a separate goal |
 
 For an apex Azure Static Web Apps domain, Microsoft recommends `ALIAS`, `ANAME`, or CNAME flattening where available; an `A` record is supported but can route traffic to a single regional host. Before moving DNS away from Azure, confirm SuperHosting's supported apex record behavior and decide whether the apex should redirect to canonical `www`.
+
+## Framework Maintenance
+
+The app currently targets `.NET 8`, and the local machine used for this investigation has .NET 8 and .NET 9 SDKs installed, but not .NET 10. Microsoft lists .NET 8 patch `8.0.27` as current on 2026-05-26 and `.NET 10` as the longer-lived LTS release, while .NET 8 reaches end of support on 2026-11-10. This branch updates the Blazor packages to `8.0.27`; a migration to `.NET 10` should be scheduled soon and validated with the .NET 10 SDK before it is merged.
 
 ## Normal Publishing Process
 

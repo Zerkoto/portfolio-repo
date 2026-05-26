@@ -21,6 +21,18 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-05-26 - Deployment Cleanup And Portfolio Redesign
+
+- Began implementing the approved target architecture: SuperHosting retains the paid domain, Azure DNS and Azure Static Web Apps remain the production route, and the obsolete GitHub Pages workflow is removed in this branch.
+- Simplified the Azure Static Web Apps workflow by removing its unused `Api` location, declaring restricted GitHub permissions, and updating to current official checkout/setup actions; the stale GitHub Pages publication still needs to be disabled in authenticated GitHub repository settings after merge.
+- Implemented an image-free, accessible responsive redesign with black/gold dark styling, silver/green light styling, theme persistence, semantic metadata, direct section-link restoration after asynchronous content renders, and public-safe technical/financial positioning.
+- Replaced the photographic template/portfolio card path with semantic hero, focus-area and experience components; introduced cached JSON loading; removed old photo assets and unused social-link assets.
+- Removed a non-resolving external link for the selected Neutron e-commerce project while retaining a careful personal-project summary.
+- Used parallel research/audit agents for official Blazor/Azure practices, accessibility/design practices, current implementation flaws, and privacy-conscious CV alignment; avoided publishing unsupported role, education, certification, or trading-scope claims.
+- Verified that .NET 10 is not installed on the current workstation. Updated the current .NET 8 Blazor packages to the supported `8.0.27` servicing level; because .NET 8 approaches end of support on 2026-11-10, a separately validated .NET 10 LTS migration is recommended after installing its SDK.
+- Validated `dotnet restore`, `dotnet build .\MyPortfolio.sln --no-restore`, JSON parsing, and `dotnet publish -c Release`; checked the local browser at desktop and 390px/320px mobile widths in both themes, including a direct `/#contact` visit and refreshed theme stylesheet, with no client errors or horizontal overflow.
+- GitHub repository settings could not be mutated from the available browser session because it is not authenticated; after merge, an authenticated repository owner must disable GitHub Pages to withdraw the stale public mirror.
+
 ### 2026-05-26 - Agent Context And Hosting Trace
 
 - Investigated the nearby `job-application-studio` repository as a reference. It keeps its agent handoff in `README.md`, not in an `AGENTS.md` file.
