@@ -102,7 +102,7 @@
     "sector": "Personal technical project",
     "title": "Neutron.bg",
     "icon": "commerce",
-    "description": "Built a Django 5.1 e-commerce application as a side-hustle project, translating product, checkout, order and supplier-workflow ideas into a working web application structure.",
+    "description": "Built and ran a Django 5.1 e-commerce application as a side-hustle project, translating product, checkout, order and supplier-workflow ideas into a working web application structure.",
     "highlights": [
       "Product catalog, cart, checkout, account/profile pages and admin workflows",
       "Payment-on-delivery order lifecycle and supplier-submission patterns",

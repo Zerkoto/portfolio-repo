@@ -1,10 +1,10 @@
 {
-  "introduction": "I am a cross-sector technology and operations professional with experience spanning investment management, pharmaceutical support, e-invoicing, healthcare applications, automotive engineering environments, postal services and personal e-commerce delivery.",
-  "evidence": "My strongest pattern is turning complex operational pressure into clear, reliable execution. I combine application support, SQL investigation, Python automation, release discipline, stakeholder communication and practical product thinking to keep important workflows moving and make them better over time.",
+  "introduction": "I am a cross-sector technology and operations professional with many years of experience spanning investment management, pharmaceutical support, e-invoicing, healthcare applications, automotive engineering environments, postal services and personal e-commerce delivery.",
+  "evidence": "My strongest pattern is turning complex operational pressure into clear, reliable execution. I combine application support, SQL investigation, Python automation, release discipline, stakeholder communication and practical product thinking to keep important workflows moving, improve them over time and deliver results consistently.",
   "highlights": [
-    "Master's Degree in E-Management, graduated with Honours",
+    "Master's Degree in E-Management, graduated with Honours and full academic excellence",
     "Academic scholarship record across Master's and Bachelor's studies",
-    "Built Neutron.bg as a Django e-commerce side project",
+    "Built and ran Neutron.bg as a Django e-commerce side-hustle project",
     "Experience across finance, healthcare, pharmaceuticals, engineering, government services and SaaS"
   ],
   "focusAreas": [
@@ -32,7 +32,7 @@
       "title": "Builder Mindset",
       "icon": "commerce",
       "tagline": "From support insight to product execution",
-      "description": "My Neutron.bg side-hustle gave me hands-on ownership of a Django e-commerce product, from catalog and checkout flows to admin workflows, deployment thinking and supplier-integration patterns.",
+      "description": "My Neutron.bg side-hustle gave me hands-on ownership of a Django e-commerce product I built and ran, from catalog and checkout flows to admin workflows, deployment thinking and supplier-integration patterns.",
       "bullets": [
         "Django 5.1 e-commerce application build",
         "Checkout, order lifecycle and supplier workflow design"

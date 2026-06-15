@@ -11,6 +11,7 @@ Use this as the durable project history for completed change batches, documented
 - Added an optimized upright hero portrait from the supplied profile photo and wired it into the portfolio hero.
 - Upgraded the hero into a two-column premium layout on desktop and a compact portrait-first layout on mobile.
 - Rewrote the About section to emphasize cross-sector experience, operational excellence, automation, technical delivery, Neutron.bg, and academic achievement.
+- Tightened the final About wording to explicitly state many years of cross-sector experience, consistent delivery, the Neutron.bg side-hustle being built and run, and the Master's degree graduation with Honours and full academic excellence.
 - Added a Skills section covering operations/support, data/automation, financial operations, and web/product delivery.
 - Restored the company-linked Experience section using the previously stored company URLs for Man Group, MaltaPost, Ricardo, Tungsten Network, Carebuilder, and AbbVie.
 - Added reusable inline SVG icons and richer card treatments across About, Skills and Experience.
