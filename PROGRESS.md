@@ -4,6 +4,22 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-06-16 - Instagram Contact Link Restored
+
+### Completed
+
+- Restored the Instagram social icon asset from repository history.
+- Added Instagram back to the data-driven contact/social model with the `zerkoto` handle.
+- Rendered Instagram alongside Email, GitHub and LinkedIn in the footer contact links.
+- Bumped the content cache version so the updated social data is requested by deployed clients.
+
+### Verification
+
+- Parsed all JSON content files successfully.
+- Ran `dotnet build .\MyPortfolio.sln --no-restore` successfully with zero warnings and zero errors.
+- Ran `dotnet publish .\src\BlazorApp\BlazorApp.csproj -c Release --no-restore` successfully.
+- Verified locally that the footer renders an Instagram link to `https://instagram.com/zerkoto`.
+
 ## 2026-06-16 - Investment Middle Office And Neutron Emphasis
 
 ### Completed

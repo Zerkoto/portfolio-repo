@@ -21,6 +21,13 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-06-16 - Instagram Contact Link Restored
+
+- Restored `src/BlazorApp/wwwroot/images/socials/instagram.svg` from repository history.
+- Added Instagram back to `SiteProperties`, `SocialIcons`, `siteproperties.json`, `socialicons.json`, and the footer contact-link rendering.
+- Used the previously committed Instagram handle `zerkoto`.
+- Bumped the content cache version and verified JSON parsing, `dotnet build .\MyPortfolio.sln --no-restore`, `dotnet publish .\src\BlazorApp\BlazorApp.csproj -c Release --no-restore`, and local footer rendering of `https://instagram.com/zerkoto`.
+
 ### 2026-06-16 - Investment Middle Office And Live Neutron Link
 
 - Added investment analysis to the hero overview and refreshed public positioning around Developer, Investment Middle Office, AI-assisted automation, Python and SQL.

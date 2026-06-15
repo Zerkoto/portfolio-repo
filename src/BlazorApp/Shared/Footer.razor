@@ -35,6 +35,13 @@
                     <span>LinkedIn</span>
                 </a>
             }
+            @if (string.IsNullOrWhiteSpace(property.Instagram) is false)
+            {
+                <a href="https://instagram.com/@(property.Instagram)" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <img src="@icons.Instagram" alt="" aria-hidden="true" class="social-icon" />
+                    <span>Instagram</span>
+                </a>
+            }
         </nav>
         <p class="footer-note">Designed and built by @property.Name using Blazor WebAssembly.</p>
     }
