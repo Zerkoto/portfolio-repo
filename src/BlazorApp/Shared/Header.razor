@@ -1,6 +1,42 @@
-<div id="header">
-    <a href="#home" target="_top">Home</a>
-    <a href="#about" target="_top">About</a>
-    <a href="#portfolio" target="_top">Portfolio</a>
-    <a href="#contact" target="_top">Contact</a>
-</div>
+@inject IJSRuntime JS
+
+<header class="site-header">
+    <nav class="site-nav shell" aria-label="Primary">
+        <a class="brand" href="#home" aria-label="Kristiyan Petrov - Home">KP</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle"
+                type="button"
+                aria-label="@ThemeButtonLabel"
+                title="@ThemeButtonLabel"
+                @onclick="ToggleTheme">
+            <span class="theme-mark" aria-hidden="true"></span>
+            <span>@ThemeText</span>
+        </button>
+    </nav>
+</header>
+
+@code {
+    private bool _isDark = true;
+
+    private string ThemeText => _isDark ? "Light" : "Dark";
+    private string ThemeButtonLabel => _isDark ? "Switch to light theme" : "Switch to dark theme";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _isDark = await JS.InvokeAsync<bool>("portfolioTheme.isDark");
+            StateHasChanged();
+        }
+    }
+
+    private async Task ToggleTheme()
+    {
+        _isDark = await JS.InvokeAsync<bool>("portfolioTheme.toggle");
+    }
+}

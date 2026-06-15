@@ -1,13 +1,69 @@
 {
-  "description": "I'm a Senior Solutions Engineer with 6+ years of experience across diverse industries, including hedge-fund support and financial services. Skilled at delivering efficient, stable solutions and ensuring smooth user experiences.",
-  "skills": [
-    "Object-oriented programming (C#, .NET, JAVA)",
-    "SQL database design & automation",
-    "Web design & user experience",
-    "Manual QA & testing",
-    "Microsoft enterprise solutions (SharePoint, Teams, etc.)"
+  "introduction": "I am a developer, Middle Office financial analyst and cross-sector technology professional with many years of experience spanning investment management, pharmaceutical support, e-invoicing, healthcare applications, automotive engineering environments, postal services and personal e-commerce delivery.",
+  "evidence": "My strongest pattern is connecting financial detail with practical technology. I combine software development, SQL investigation, Python automation, AI-assisted coding, investment operations, pricing and valuation awareness, and clear stakeholder communication to turn complex workflows into reliable results.",
+  "highlights": [
+    {
+      "text": "Master's Degree in E-Management, graduated with Honours and full academic excellence",
+      "icon": "education"
+    },
+    {
+      "text": "Middle Office financial analysis across NAV, P&L, pricing, reconciliations and instrument lifecycle workflows",
+      "icon": "finance"
+    },
+    {
+      "text": "Live Django e-commerce project: Neutron.bg",
+      "icon": "commerce",
+      "url": "https://www.neutron.bg/"
+    },
+    {
+      "text": "Daily AI tools and coding-agent workflows for development, analysis and delivery",
+      "icon": "automation"
+    },
+    {
+      "text": "Market knowledge across stocks, crypto, derivatives and financial-instrument pricing",
+      "icon": "finance"
+    }
   ],
-  "detailOrQuote": "I thrive in data-driven environments where I can quickly identify, troubleshoot, and resolve complex issues. My communication skills help bridge the gap between technical and non-technical teams.",
-  "detailOrQuote2": "I hold a Bachelor's degree in Computer Science and a Master's degree in E-Management. Always seeking new knowledge, I stay current with emerging technologies.",
-  "detailOrQuote3": "If you're looking for a solutions engineer who can bring fresh ideas and proven expertise, let's connect. I'd love to help your organization grow and succeed."
+  "focusAreas": [
+    {
+      "title": "Developer Mindset",
+      "icon": "automation",
+      "tagline": "Code, AI and execution",
+      "description": "I work like a modern developer: using AI agents, structured analysis, code, tests and documentation to move faster while keeping the work understandable, maintainable and useful.",
+      "bullets": [
+        "AI-assisted coding, review, documentation and refactoring workflows",
+        "Python, SQL and practical automation for business and finance problems"
+      ]
+    },
+    {
+      "title": "Investment Middle Office",
+      "icon": "finance",
+      "tagline": "Markets, controls and valuation",
+      "description": "My Man Group experience sits at the intersection of investment operations, data quality and technology within one of the world's largest listed hedge fund managers and global alternative investment firms. I bring Middle Office fluency around NAV, P&L, pricing governance, reconciliations, trade lifecycle data, risk controls and coordination with Operations, Tech and investment stakeholders.",
+      "bullets": [
+        "Middle Office exposure across NAV, P&L, pricing, valuation, reconciliations and portfolio operations",
+        "Financial-instrument knowledge across equities, crypto, derivatives, OTC products and systematic trading concepts"
+      ]
+    },
+    {
+      "title": "Data And Automation",
+      "icon": "data",
+      "tagline": "Practical tools for repeatable work",
+      "description": "I use SQL, Python, scripting, AI-assisted analysis and reporting habits to investigate data breaks, validate financial workflows, automate checks and create better operational visibility.",
+      "bullets": [
+        "SQL investigation, reconciliation, pricing and validation checks",
+        "Python automation, monitoring and reporting improvements"
+      ]
+    },
+    {
+      "title": "Builder Mindset",
+      "icon": "commerce",
+      "tagline": "Live product ownership",
+      "description": "Neutron.bg is my live Django e-commerce project: a working product where I own the catalog, checkout, order lifecycle, admin workflows and hosting/deployment thinking behind a real web storefront.",
+      "bullets": [
+        "Live Django 5.1 e-commerce application at neutron.bg",
+        "Checkout, order lifecycle and supplier workflow design"
+      ]
+    }
+  ]
 }

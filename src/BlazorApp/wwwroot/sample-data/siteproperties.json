@@ -1,12 +1,23 @@
 {
   "name": "Kristiyan Petrov",
-  "title": "Web Designer, Content Creator & Software solutions engineer",
+  "title": "Developer, Investment Middle Office Analyst and AI-Assisted Automation",
+  "heroEyebrow": "Developer | Investment | AI Agents | Python | SQL",
+  "heroSummary": "I connect software development with Middle Office financial analysis: building AI-assisted workflows with Python and SQL while understanding investment operations, pricing, valuation and instrument lifecycle detail.",
+  "profileImage": "images/profile/kristiyan-profile.jpg",
+  "profileImageAlt": "Portrait of Kristiyan Petrov",
+  "proofPoints": [
+    "Investment analysis",
+    "AI-assisted development",
+    "Python and SQL",
+    "Financial instruments",
+    "Business results"
+  ],
+  "primaryCtaLabel": "View experience",
+  "primaryCtaHref": "#experience",
+  "secondaryCtaLabel": "Explore skills",
+  "secondaryCtaHref": "#skills",
   "email": "kpetrov_business@outlook.com",
-  "devDotTo": null,
   "gitHub": "Zerkoto/portfolio-repo",
-  "instagram": "zerkoto",
   "linkedIn": "zerkoto",
-  "medium": "",
-  "twitter": "zerkoto",
-  "youTube": "@zerkoto"
+  "instagram": "zerkoto"
 }

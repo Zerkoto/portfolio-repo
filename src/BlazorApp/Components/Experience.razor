@@ -1,0 +1,56 @@
+@inject PortfolioContentService Content
+
+<section class="section experience" id="experience" aria-labelledby="experience-heading">
+    <header class="section-heading section-heading-row">
+        <div>
+            <p class="section-kicker">Experience</p>
+            <h2 id="experience-heading">Companies, sectors and selected project evidence</h2>
+        </div>
+        <p class="section-note">A polished overview of the environments where I have supported users, systems, data, workflows and delivery.</p>
+    </header>
+    @if (highlights is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="experience-grid">
+            @foreach (var highlight in highlights)
+            {
+                <article class="card experience-card">
+                    <div class="card-topline">
+                        <span class="icon-badge">
+                            <IconMark Name="@highlight.Icon" />
+                        </span>
+                        <p class="card-label">@highlight.Category</p>
+                    </div>
+                    <h3>@(string.IsNullOrWhiteSpace(highlight.Company) ? highlight.Title : highlight.Company)</h3>
+                    <p class="role-title">@highlight.Role</p>
+                    <p class="sector-label">@highlight.Sector</p>
+                    <p>@highlight.Description</p>
+                    <ul class="compact-list">
+                        @foreach (var bullet in highlight.Highlights)
+                        {
+                            <li>@bullet</li>
+                        }
+                    </ul>
+                    @if (string.IsNullOrWhiteSpace(highlight.Url) is false)
+                    {
+                        <a class="text-link" href="@highlight.Url" target="_blank" rel="noopener noreferrer">
+                            @highlight.LinkLabel
+                        </a>
+                    }
+                </article>
+            }
+        </div>
+    }
+</section>
+
+@code {
+    private List<ExperienceHighlight>? highlights;
+
+    protected override async Task OnInitializedAsync()
+    {
+        highlights = await Content.GetExperienceAsync();
+    }
+}

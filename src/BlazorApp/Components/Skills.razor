@@ -1,0 +1,47 @@
+@inject PortfolioContentService Content
+
+<section class="section skills" id="skills" aria-labelledby="skills-heading">
+    <header class="section-heading section-heading-row">
+        <div>
+            <p class="section-kicker">Skills</p>
+            <h2 id="skills-heading">Practical capability across operations, data and delivery</h2>
+        </div>
+        <p class="section-note">A portfolio of tools and habits built in finance, healthcare, e-commerce, engineering, government services and SaaS environments.</p>
+    </header>
+    @if (skillGroups is null)
+    {
+        <p><em>Loading skills...</em></p>
+    }
+    else
+    {
+        <div class="skills-grid">
+            @foreach (var group in skillGroups)
+            {
+                <article class="card skill-card">
+                    <div class="card-topline">
+                        <span class="icon-badge">
+                            <IconMark Name="@group.Icon" />
+                        </span>
+                        <h3>@group.Title</h3>
+                    </div>
+                    <p>@group.Description</p>
+                    <div class="skill-tags" aria-label="@($"{group.Title} skills")">
+                        @foreach (var skill in group.Skills)
+                        {
+                            <span>@skill</span>
+                        }
+                    </div>
+                </article>
+            }
+        </div>
+    }
+</section>
+
+@code {
+    private List<SkillGroup>? skillGroups;
+
+    protected override async Task OnInitializedAsync()
+    {
+        skillGroups = await Content.GetSkillsAsync();
+    }
+}

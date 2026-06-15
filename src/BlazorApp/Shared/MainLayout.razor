@@ -1,5 +1,21 @@
 ﻿@inherits LayoutComponentBase
 
-<div id="main">
+@inject IJSRuntime JS
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<Header />
+
+<main id="main-content">
     @Body
-</div>
+</main>
+<Footer />
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("portfolioNavigation.scrollToCurrentHash");
+        }
+    }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "title": "AI-Assisted Development",
+    "icon": "automation",
+    "description": "Daily use of AI tools and coding agents to accelerate development, analysis, documentation and delivery.",
+    "skills": [
+      "AI agents",
+      "Prompting",
+      "Code review",
+      "Rapid prototyping",
+      "Technical documentation"
+    ]
+  },
+  {
+    "title": "Development, Support And Results",
+    "icon": "support",
+    "description": "Developer-minded production habits for environments where reliability, user outcomes and clear communication matter.",
+    "skills": [
+      "Production diagnostics",
+      "Application improvement",
+      "Workflow ownership",
+      "Stakeholder communication",
+      "Delivery documentation"
+    ]
+  },
+  {
+    "title": "Data And Automation",
+    "icon": "data",
+    "description": "Hands-on analysis and scripting for investigation, validation and reporting.",
+    "skills": [
+      "Python",
+      "SQL",
+      "PL/SQL",
+      "PowerShell",
+      "Excel",
+      "Monitoring and reporting"
+    ]
+  },
+  {
+    "title": "Investment And Middle Office Analysis",
+    "icon": "finance",
+    "description": "Middle Office financial analysis across investment operations, markets, valuation, controls and instrument lifecycle workflows.",
+    "skills": [
+      "Investment analysis",
+      "Stocks and crypto markets",
+      "Derivatives and OTC products",
+      "Pricing and valuation",
+      "NAV support",
+      "P&L checks",
+      "Reconciliations"
+    ]
+  },
+  {
+    "title": "Web And Product Delivery",
+    "icon": "commerce",
+    "description": "A practical builder's toolkit across Blazor, Django, e-commerce and portfolio application delivery.",
+    "skills": [
+      "Blazor WebAssembly",
+      "Django 5.1",
+      "HTML/CSS/JavaScript",
+      "GitHub Actions",
+      "Azure Static Web Apps",
+      "SuperHosting/cPanel deployment"
+    ]
+  }
+]
