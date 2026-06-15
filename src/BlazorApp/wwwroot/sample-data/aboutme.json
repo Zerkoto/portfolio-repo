@@ -1,41 +1,67 @@
 {
-  "introduction": "I am a developer and cross-sector technology professional with many years of experience spanning investment management, pharmaceutical support, e-invoicing, healthcare applications, automotive engineering environments, postal services and personal e-commerce delivery.",
-  "evidence": "My strongest pattern is turning complex operational pressure into clear, reliable execution. I combine application support, software development, SQL investigation, Python automation, AI-assisted coding, release discipline, stakeholder communication and practical product thinking to keep important workflows moving, improve them over time and deliver results consistently.",
+  "introduction": "I am a developer, Middle Office financial analyst and cross-sector technology professional with many years of experience spanning investment management, pharmaceutical support, e-invoicing, healthcare applications, automotive engineering environments, postal services and personal e-commerce delivery.",
+  "evidence": "My strongest pattern is connecting financial detail with practical technology. I combine software development, SQL investigation, Python automation, AI-assisted coding, investment operations, pricing and valuation awareness, and clear stakeholder communication to turn complex workflows into reliable results.",
   "highlights": [
-    "Master's Degree in E-Management, graduated with Honours and full academic excellence",
-    "Academic scholarship record across Master's and Bachelor's studies",
-    "Built and ran Neutron.bg as a Django e-commerce side-hustle project",
-    "Work daily with AI tools and coding agents to accelerate development, analysis and delivery",
-    "Experience across finance, healthcare, pharmaceuticals, engineering, government services and SaaS"
+    {
+      "text": "Master's Degree in E-Management, graduated with Honours and full academic excellence",
+      "icon": "education"
+    },
+    {
+      "text": "Middle Office financial analysis across NAV, P&L, pricing, reconciliations and instrument lifecycle workflows",
+      "icon": "finance"
+    },
+    {
+      "text": "Live Django e-commerce project: Neutron.bg",
+      "icon": "commerce",
+      "url": "https://www.neutron.bg/"
+    },
+    {
+      "text": "Daily AI tools and coding-agent workflows for development, analysis and delivery",
+      "icon": "automation"
+    },
+    {
+      "text": "Market knowledge across stocks, crypto, derivatives and financial-instrument pricing",
+      "icon": "finance"
+    }
   ],
   "focusAreas": [
     {
       "title": "Developer Mindset",
       "icon": "automation",
       "tagline": "Code, AI and execution",
-      "description": "I work like a modern developer: using AI agents, structured analysis, code, tests and documentation to move faster while keeping the work understandable and reliable.",
+      "description": "I work like a modern developer: using AI agents, structured analysis, code, tests and documentation to move faster while keeping the work understandable, maintainable and useful.",
       "bullets": [
-        "AI-assisted coding, review and documentation workflows",
-        "Python, SQL and practical automation for business problems"
+        "AI-assisted coding, review, documentation and refactoring workflows",
+        "Python, SQL and practical automation for business and finance problems"
+      ]
+    },
+    {
+      "title": "Investment Middle Office",
+      "icon": "finance",
+      "tagline": "Markets, controls and valuation",
+      "description": "My Man Group experience sits at the intersection of investment operations, data quality and technology within one of the world's largest listed hedge fund managers and global alternative investment firms. I bring Middle Office fluency around NAV, P&L, pricing governance, reconciliations, trade lifecycle data, risk controls and coordination with Operations, Tech and investment stakeholders.",
+      "bullets": [
+        "Middle Office exposure across NAV, P&L, pricing, valuation, reconciliations and portfolio operations",
+        "Financial-instrument knowledge across equities, crypto, derivatives, OTC products and systematic trading concepts"
       ]
     },
     {
       "title": "Data And Automation",
       "icon": "data",
       "tagline": "Practical tools for repeatable work",
-      "description": "I use SQL, Python, scripting, AI-assisted analysis and reporting habits to investigate issues, validate changes, reduce repetitive work and create better operational visibility.",
+      "description": "I use SQL, Python, scripting, AI-assisted analysis and reporting habits to investigate data breaks, validate financial workflows, automate checks and create better operational visibility.",
       "bullets": [
-        "SQL investigation, reconciliation and validation",
+        "SQL investigation, reconciliation, pricing and validation checks",
         "Python automation, monitoring and reporting improvements"
       ]
     },
     {
       "title": "Builder Mindset",
       "icon": "commerce",
-      "tagline": "From support insight to product execution",
-      "description": "My Neutron.bg side-hustle gave me hands-on ownership of a Django e-commerce product I built and ran, from catalog and checkout flows to admin workflows, deployment thinking and supplier-integration patterns.",
+      "tagline": "Live product ownership",
+      "description": "Neutron.bg is my live Django e-commerce project: a working product where I own the catalog, checkout, order lifecycle, admin workflows and hosting/deployment thinking behind a real web storefront.",
       "bullets": [
-        "Django 5.1 e-commerce application build",
+        "Live Django 5.1 e-commerce application at neutron.bg",
         "Checkout, order lifecycle and supplier workflow design"
       ]
     }

@@ -21,6 +21,15 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-06-16 - Investment Middle Office And Live Neutron Link
+
+- Added investment analysis to the hero overview and refreshed public positioning around Developer, Investment Middle Office, AI-assisted automation, Python and SQL.
+- Reworked About, Skills and Experience copy to emphasize Middle Office financial analysis, investment operations, pricing, valuation, NAV/P&L, reconciliations, instrument lifecycle knowledge, derivatives and market awareness.
+- Added a fourth About focus card, `Investment Middle Office`, grounded in public Man Group/AHL and Man Group operations role themes without copying job-description text verbatim.
+- Removed the academic-scholarship highlight chip and converted About highlights into link-capable objects.
+- Added a clickable About highlight and Experience link for the live Neutron.bg Django e-commerce project at `https://www.neutron.bg/`.
+- Verified `https://www.neutron.bg/` returned HTTP 200 from the local workstation, parsed JSON, ran `dotnet build .\MyPortfolio.sln --no-restore`, ran `dotnet publish .\src\BlazorApp\BlazorApp.csproj -c Release --no-restore`, and checked local browser rendering at desktop and 390px mobile widths with no horizontal overflow.
+
 ### 2026-06-16 - Developer And AI Hero Copy Refinement
 
 - Fixed the hero signal pills by removing their negative offsets and making them full-width within the portrait column, preventing `AI / Python / SQL` and `Development / Support / Results` from overlapping the hero copy or profile image.

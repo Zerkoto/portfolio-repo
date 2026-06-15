@@ -1,14 +1,15 @@
 {
   "name": "Kristiyan Petrov",
-  "title": "Developer, Investment Operations and AI-Assisted Automation",
-  "heroEyebrow": "Developer | AI Agents | Python | SQL | Finance",
-  "heroSummary": "I build, modernize and support business-critical systems with practical development skills, daily AI-assisted coding workflows, Python, SQL and clear communication across technical and non-technical teams.",
+  "title": "Developer, Investment Middle Office Analyst and AI-Assisted Automation",
+  "heroEyebrow": "Developer | Investment | AI Agents | Python | SQL",
+  "heroSummary": "I connect software development with Middle Office financial analysis: building AI-assisted workflows with Python and SQL while understanding investment operations, pricing, valuation and instrument lifecycle detail.",
   "profileImage": "images/profile/kristiyan-profile.jpg",
   "profileImageAlt": "Portrait of Kristiyan Petrov",
   "proofPoints": [
+    "Investment analysis",
     "AI-assisted development",
     "Python and SQL",
-    "Application support",
+    "Financial instruments",
     "Business results"
   ],
   "primaryCtaLabel": "View experience",

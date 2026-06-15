@@ -4,6 +4,37 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-06-16 - Investment Middle Office And Neutron Emphasis
+
+### Completed
+
+- Added investment analysis to the hero overview proof points and refreshed the headline positioning around Developer, Investment Middle Office and AI-assisted automation.
+- Reworked public copy to emphasize Middle Office financial analysis, investment operations, pricing, valuation, P&L, reconciliations, instrument lifecycle knowledge, derivatives and market awareness.
+- Added a dedicated `Investment Middle Office` About card based on public Man Group/AHL and Man Group operations role descriptions, while keeping the wording personal and non-confidential.
+- Removed the academic-scholarship highlight chip to reduce visual clutter.
+- Converted About highlights from plain strings to link-capable objects and made the Neutron.bg highlight clickable.
+- Updated the Neutron.bg experience card to link to the live Django e-commerce site at `https://www.neutron.bg/`.
+- Replaced older repetitive support/release wording with development, analysis, production diagnostics, workflow ownership and business-result language.
+
+### Documented Decisions
+
+- Describe Man Group as one of the world's largest listed hedge fund managers and global alternative investment firms, rather than using an unqualified "largest hedge fund in the world" claim.
+- Keep Neutron.bg positioned as a live personal technical/e-commerce project, not formal employment.
+- Use public Man Group role language as a reference for Middle Office themes, but do not copy job-description wording verbatim or publish confidential role details.
+
+### Verification
+
+- Confirmed `https://www.neutron.bg/` returns HTTP 200 from the local workstation.
+- Parsed all JSON content files successfully.
+- Ran `dotnet build .\MyPortfolio.sln --no-restore` successfully with zero warnings and zero errors.
+- Ran `dotnet publish .\src\BlazorApp\BlazorApp.csproj -c Release --no-restore` successfully.
+- Verified in browser that the hero proof points include investment analysis, Neutron.bg is clickable from About and Experience, and the updated sections have no horizontal overflow at desktop or 390px mobile width.
+
+### Follow-Up
+
+- Review the strength of the public finance wording before merging, especially the stocks/crypto/derivatives language.
+- Add more exact Man Group role/title detail only if it is approved for public publication.
+
 ## 2026-06-16 - Developer And AI Positioning Refinement
 
 ### Completed

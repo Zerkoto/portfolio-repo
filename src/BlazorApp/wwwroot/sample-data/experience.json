@@ -2,15 +2,15 @@
   {
     "category": "Finance",
     "company": "Man Group",
-    "role": "Middle Office Analyst and Application Support",
+    "role": "Middle Office Financial Analyst and Application Support",
     "sector": "Global investment management",
     "title": "Man Group",
     "icon": "finance",
-    "description": "Supporting investment operations, valuation workflows, performance review, production stability and automation across business-critical financial systems.",
+    "description": "Worked across Middle Office and application workflows at one of the world's largest listed hedge fund managers and global alternative investment firms, connecting financial analysis with data, pricing, valuation, P&L, reconciliations and production tooling.",
     "highlights": [
-      "NAV, pricing, P&L, reconciliation and portfolio-operation exposure",
-      "Python, SQL, monitoring and analytics work supporting operational efficiency",
-      "Cross-functional communication with operations, technology, risk and portfolio stakeholders"
+      "Middle Office exposure across NAV, P&L, pricing governance, valuation controls, reconciliations and portfolio operations",
+      "Trade lifecycle and financial-instrument awareness across equities, bonds, derivatives, OTC products and systematic trading concepts",
+      "Python, SQL, monitoring and analytics work connecting Operations, Technology, Risk and investment stakeholders"
     ],
     "url": "https://www.man.com/",
     "linkLabel": "Visit Man Group"
@@ -98,17 +98,17 @@
   {
     "category": "Selected Project",
     "company": "Neutron.bg",
-    "role": "Django E-commerce Side Project",
-    "sector": "Personal technical project",
+    "role": "Django E-commerce Project",
+    "sector": "Live technical project",
     "title": "Neutron.bg",
     "icon": "commerce",
-    "description": "Built and ran a Django 5.1 e-commerce application as a side-hustle project, translating product, checkout, order and supplier-workflow ideas into a working web application structure.",
+    "description": "Built and operate a live Django 5.1 e-commerce application, translating product, checkout, order and supplier-workflow ideas into a working web storefront.",
     "highlights": [
       "Product catalog, cart, checkout, account/profile pages and admin workflows",
       "Payment-on-delivery order lifecycle and supplier-submission patterns",
       "Deployment-oriented thinking for SuperHosting/cPanel, MariaDB/MySQL and static/media handling"
     ],
-    "url": "",
-    "linkLabel": ""
+    "url": "https://www.neutron.bg/",
+    "linkLabel": "Visit Neutron.bg"
   }
 ]

@@ -307,6 +307,7 @@ button:focus-visible {
 
 .proof-strip span,
 .achievement-strip span,
+.achievement-strip a,
 .skill-tags span {
   display: inline-flex;
   gap: 0.45rem;
@@ -320,6 +321,14 @@ button:focus-visible {
   font-size: 0.9rem;
   font-weight: 700;
   box-shadow: var(--shadow-soft);
+}
+
+.achievement-strip a {
+  text-decoration: none;
+}
+
+.achievement-strip a:hover {
+  border-color: var(--accent);
 }
 
 .proof-strip .icon-mark,
@@ -517,7 +526,7 @@ button:focus-visible {
 }
 
 .focus-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .experience-grid {
@@ -832,7 +841,8 @@ button:focus-visible {
   }
 
   .proof-strip span,
-  .achievement-strip span {
+  .achievement-strip span,
+  .achievement-strip a {
     flex: 1 1 100%;
   }
 

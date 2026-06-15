@@ -14,13 +14,13 @@
   {
     "title": "Development, Support And Results",
     "icon": "support",
-    "description": "Developer-minded support habits for complex production environments where reliability and outcomes matter.",
+    "description": "Developer-minded production habits for environments where reliability, user outcomes and clear communication matter.",
     "skills": [
-      "Incident and problem management",
-      "Application support",
-      "Release coordination",
+      "Production diagnostics",
+      "Application improvement",
+      "Workflow ownership",
       "Stakeholder communication",
-      "Knowledge base documentation"
+      "Delivery documentation"
     ]
   },
   {
@@ -37,15 +37,17 @@
     ]
   },
   {
-    "title": "Financial Operations",
+    "title": "Investment And Middle Office Analysis",
     "icon": "finance",
-    "description": "Experience around investment operations, controls, reconciliation and valuation workflows.",
+    "description": "Middle Office financial analysis across investment operations, markets, valuation, controls and instrument lifecycle workflows.",
     "skills": [
+      "Investment analysis",
+      "Stocks and crypto markets",
+      "Derivatives and OTC products",
+      "Pricing and valuation",
       "NAV support",
       "P&L checks",
-      "Reconciliations",
-      "Portfolio operations",
-      "Risk-aware change"
+      "Reconciliations"
     ]
   },
   {

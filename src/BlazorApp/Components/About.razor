@@ -16,10 +16,20 @@
         <div class="achievement-strip" aria-label="Selected achievements">
             @foreach (var highlight in aboutMe.Highlights)
             {
-                <span>
-                    <IconMark Name="education" />
-                    @highlight
-                </span>
+                @if (string.IsNullOrWhiteSpace(highlight.Url))
+                {
+                    <span>
+                        <IconMark Name="@highlight.Icon" />
+                        @highlight.Text
+                    </span>
+                }
+                else
+                {
+                    <a href="@highlight.Url" target="_blank" rel="noopener noreferrer">
+                        <IconMark Name="@highlight.Icon" />
+                        @highlight.Text
+                    </a>
+                }
             }
         </div>
         <div class="focus-grid">
