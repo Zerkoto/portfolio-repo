@@ -1,8 +1,20 @@
 [
   {
-    "title": "Operations And Support",
+    "title": "AI-Assisted Development",
+    "icon": "automation",
+    "description": "Daily use of AI tools and coding agents to accelerate development, analysis, documentation and delivery.",
+    "skills": [
+      "AI agents",
+      "Prompting",
+      "Code review",
+      "Rapid prototyping",
+      "Technical documentation"
+    ]
+  },
+  {
+    "title": "Development, Support And Results",
     "icon": "support",
-    "description": "Reliable application support habits for complex production environments.",
+    "description": "Developer-minded support habits for complex production environments where reliability and outcomes matter.",
     "skills": [
       "Incident and problem management",
       "Application support",
@@ -39,7 +51,7 @@
   {
     "title": "Web And Product Delivery",
     "icon": "commerce",
-    "description": "A practical builder's toolkit across Blazor, Django and e-commerce application delivery.",
+    "description": "A practical builder's toolkit across Blazor, Django, e-commerce and portfolio application delivery.",
     "skills": [
       "Blazor WebAssembly",
       "Django 5.1",

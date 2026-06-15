@@ -1,28 +1,29 @@
 {
-  "introduction": "I am a cross-sector technology and operations professional with many years of experience spanning investment management, pharmaceutical support, e-invoicing, healthcare applications, automotive engineering environments, postal services and personal e-commerce delivery.",
-  "evidence": "My strongest pattern is turning complex operational pressure into clear, reliable execution. I combine application support, SQL investigation, Python automation, release discipline, stakeholder communication and practical product thinking to keep important workflows moving, improve them over time and deliver results consistently.",
+  "introduction": "I am a developer and cross-sector technology professional with many years of experience spanning investment management, pharmaceutical support, e-invoicing, healthcare applications, automotive engineering environments, postal services and personal e-commerce delivery.",
+  "evidence": "My strongest pattern is turning complex operational pressure into clear, reliable execution. I combine application support, software development, SQL investigation, Python automation, AI-assisted coding, release discipline, stakeholder communication and practical product thinking to keep important workflows moving, improve them over time and deliver results consistently.",
   "highlights": [
     "Master's Degree in E-Management, graduated with Honours and full academic excellence",
     "Academic scholarship record across Master's and Bachelor's studies",
     "Built and ran Neutron.bg as a Django e-commerce side-hustle project",
+    "Work daily with AI tools and coding agents to accelerate development, analysis and delivery",
     "Experience across finance, healthcare, pharmaceuticals, engineering, government services and SaaS"
   ],
   "focusAreas": [
     {
-      "title": "Operational Excellence",
-      "icon": "delivery",
-      "tagline": "Calm execution under pressure",
-      "description": "I work well in environments where accuracy, timing and communication matter. From investment operations to government-service platforms, I focus on keeping critical processes dependable.",
+      "title": "Developer Mindset",
+      "icon": "automation",
+      "tagline": "Code, AI and execution",
+      "description": "I work like a modern developer: using AI agents, structured analysis, code, tests and documentation to move faster while keeping the work understandable and reliable.",
       "bullets": [
-        "Incident, problem and release coordination",
-        "Clear handovers, documentation and stakeholder updates"
+        "AI-assisted coding, review and documentation workflows",
+        "Python, SQL and practical automation for business problems"
       ]
     },
     {
       "title": "Data And Automation",
       "icon": "data",
       "tagline": "Practical tools for repeatable work",
-      "description": "I use SQL, Python, scripting and reporting habits to investigate issues, validate changes, reduce repetitive work and create better operational visibility.",
+      "description": "I use SQL, Python, scripting, AI-assisted analysis and reporting habits to investigate issues, validate changes, reduce repetitive work and create better operational visibility.",
       "bullets": [
         "SQL investigation, reconciliation and validation",
         "Python automation, monitoring and reporting improvements"

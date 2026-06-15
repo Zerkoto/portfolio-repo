@@ -1,15 +1,15 @@
 {
   "name": "Kristiyan Petrov",
-  "title": "Investment Operations, Application Support and Automation",
-  "heroEyebrow": "Finance | Operations | Python | SQL | Delivery",
-  "heroSummary": "I connect business-critical operations with practical technology: supporting investment workflows, improving applications, automating repeatable work, and communicating clearly across technical and non-technical teams.",
+  "title": "Developer, Investment Operations and AI-Assisted Automation",
+  "heroEyebrow": "Developer | AI Agents | Python | SQL | Finance",
+  "heroSummary": "I build, modernize and support business-critical systems with practical development skills, daily AI-assisted coding workflows, Python, SQL and clear communication across technical and non-technical teams.",
   "profileImage": "images/profile/kristiyan-profile.jpg",
   "profileImageAlt": "Portrait of Kristiyan Petrov",
   "proofPoints": [
-    "Investment operations",
+    "AI-assisted development",
+    "Python and SQL",
     "Application support",
-    "Python and SQL automation",
-    "Multi-sector delivery"
+    "Business results"
   ],
   "primaryCtaLabel": "View experience",
   "primaryCtaHref": "#experience",

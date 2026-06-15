@@ -4,6 +4,34 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-06-16 - Developer And AI Positioning Refinement
+
+### Completed
+
+- Fixed the hero portrait signal pills so they align below the profile image instead of overlapping the hero text or portrait caption.
+- Replaced the second hero signal pill wording from `Support Controls Delivery` to `Development Support Results`.
+- Reworked hero, About, Skills, metadata and page title copy so the public positioning reads more clearly as developer-oriented.
+- Added explicit AI-assisted development positioning, including daily use of AI tools and coding agents for development, analysis, documentation and delivery.
+- Added an `AI-Assisted Development` skill group and refreshed support wording toward development, support and results.
+
+### Documented Decisions
+
+- Keep the stronger developer/AI wording factual and broad, without adding unverified metrics, certifications, role titles, or confidential client detail.
+- Keep the portrait signal pills visually tied to the image card on desktop and mobile by making them full-width within the hero visual column.
+
+### Verification
+
+- Parsed all JSON content files successfully.
+- Ran `dotnet build .\MyPortfolio.sln --no-restore` successfully with zero warnings and zero errors.
+- Ran `dotnet publish .\src\BlazorApp\BlazorApp.csproj -c Release --no-restore` successfully.
+- Verified in browser at 2048px desktop width that the signal pills no longer overlap the hero copy or portrait.
+- Verified in browser at 390px mobile width that the signal pills do not cause horizontal overflow and the longer wording wraps inside the pill.
+
+### Follow-Up
+
+- Review the stronger developer/AI wording before merging to production.
+- Keep future AI-related claims focused on actual workflow habits unless the user approves more specific tooling, project or outcome details for publication.
+
 ## 2026-06-16 - Premium Hero, Skills And Experience Upgrade
 
 ### Completed

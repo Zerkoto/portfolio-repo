@@ -21,6 +21,15 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-06-16 - Developer And AI Hero Copy Refinement
+
+- Fixed the hero signal pills by removing their negative offsets and making them full-width within the portrait column, preventing `AI / Python / SQL` and `Development / Support / Results` from overlapping the hero copy or profile image.
+- Updated the hero, About, Skills, page title and SEO metadata to present Kristiyan more clearly as a developer using AI-assisted coding, agents, Python and SQL in modern delivery workflows.
+- Replaced the old `Support / Controls / Delivery` signal wording with `Development / Support / Results`.
+- Added an `AI-Assisted Development` skill group and refreshed the support skill group as `Development, Support And Results`.
+- Verified JSON parsing, `dotnet build .\MyPortfolio.sln --no-restore`, `dotnet publish .\src\BlazorApp\BlazorApp.csproj -c Release --no-restore`, and local browser rendering at 2048px desktop and 390px mobile widths with no signal-pill overlap or horizontal overflow.
+- A local preview was run at `http://127.0.0.1:5080/` during this session.
+
 ### 2026-06-16 - Premium Portfolio Content And Hero Photo
 
 - Added the supplied profile photo as an optimized local hero asset at `src/BlazorApp/wwwroot/images/profile/kristiyan-profile.jpg`.
