@@ -18,7 +18,7 @@ Update `docs/HANDOFF.md` after any coherent change batch that affects the projec
 - This is Kristiyan Petrov's portfolio site, published at `https://www.kpetrov.z.bg/`.
 - It is a .NET 8 Blazor WebAssembly app in `src/BlazorApp`.
 - User-facing portfolio data is principally in `src/BlazorApp/wwwroot/sample-data`, loaded through `PortfolioContentService`.
-- The current presentation is intentionally image-free and uses a black/gold dark theme plus silver/green light theme; do not restore template photography without an approved visual/content purpose.
+- The current presentation uses an approved optimized hero portrait plus a black/gold dark theme and silver/green light theme; do not replace the profile photo or add new photography without an approved visual/content purpose.
 - `kpetrov.z.bg` is registered and renewed through SuperHosting; do not confuse domain ownership with the current Azure application host.
 - Production hosting is Azure Static Web Apps, deployed from GitHub through `.github/workflows/azure-static-web-apps-ashy-pebble-014ec8203.yml`.
 - The GitHub Pages workflow is legacy/stale and is not the production route for `kpetrov.z.bg`; see `docs/HOSTING.md`.

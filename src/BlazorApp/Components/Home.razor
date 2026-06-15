@@ -1,23 +1,62 @@
 @inject PortfolioContentService Content
 
 <section class="hero section" id="home" aria-labelledby="hero-heading">
-    <div class="hero-content">
     @if (property is null)
     {
         <p><em>Loading...</em></p>
     }
     else
     {
-        <p class="hero-eyebrow">@property.HeroEyebrow</p>
-        <h1 id="hero-heading">@property.Name</h1>
-        <p class="hero-title">@property.Title</p>
-        <p class="hero-summary">@property.HeroSummary</p>
-        <nav class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="@property.PrimaryCtaHref">@property.PrimaryCtaLabel</a>
-            <a class="button secondary" href="@property.SecondaryCtaHref">@property.SecondaryCtaLabel</a>
-        </nav>
+        <div class="hero-grid">
+            <div class="hero-content">
+                <p class="hero-eyebrow">@property.HeroEyebrow</p>
+                <h1 id="hero-heading">@property.Name</h1>
+                <p class="hero-title">@property.Title</p>
+                <p class="hero-summary">@property.HeroSummary</p>
+                <div class="proof-strip" aria-label="Portfolio proof points">
+                    @foreach (var proofPoint in property.ProofPoints)
+                    {
+                        <span>
+                            <IconMark Name="delivery" />
+                            @proofPoint
+                        </span>
+                    }
+                </div>
+                <nav class="hero-actions" aria-label="Primary actions">
+                    <a class="button primary" href="@property.PrimaryCtaHref">@property.PrimaryCtaLabel</a>
+                    <a class="button secondary" href="@property.SecondaryCtaHref">@property.SecondaryCtaLabel</a>
+                </nav>
+            </div>
+            <aside class="hero-visual" aria-label="Profile and portfolio snapshot">
+                <div class="portrait-card">
+                    @if (string.IsNullOrWhiteSpace(property.ProfileImage) is false)
+                    {
+                        <img src="@property.ProfileImage" alt="@property.ProfileImageAlt" class="portrait-image" loading="eager" />
+                    }
+                    else
+                    {
+                        <div class="portrait-placeholder" aria-label="Profile photo placeholder">
+                            <span>KP</span>
+                        </div>
+                    }
+                    <div class="portrait-caption">
+                        <span>Cross-sector operator</span>
+                        <strong>Finance, systems and delivery</strong>
+                    </div>
+                </div>
+                <div class="signal-card signal-card-primary">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Automation</span>
+                </div>
+                <div class="signal-card signal-card-secondary">
+                    <span>Support</span>
+                    <span>Controls</span>
+                    <span>Delivery</span>
+                </div>
+            </aside>
+        </div>
     }
-    </div>
 </section>
 
 @code {

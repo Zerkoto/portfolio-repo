@@ -1,18 +1,42 @@
 {
-  "introduction": "I bring operational attention and technical problem-solving together, with a focus on dependable application support and useful improvements.",
-  "evidence": "My work draws on Python, SQL, automation, and technical delivery to investigate issues, reduce repetition, and communicate practical solutions.",
+  "introduction": "I am a cross-sector technology and operations professional with experience spanning investment management, pharmaceutical support, e-invoicing, healthcare applications, automotive engineering environments, postal services and personal e-commerce delivery.",
+  "evidence": "My strongest pattern is turning complex operational pressure into clear, reliable execution. I combine application support, SQL investigation, Python automation, release discipline, stakeholder communication and practical product thinking to keep important workflows moving and make them better over time.",
+  "highlights": [
+    "Master's Degree in E-Management, graduated with Honours",
+    "Academic scholarship record across Master's and Bachelor's studies",
+    "Built Neutron.bg as a Django e-commerce side project",
+    "Experience across finance, healthcare, pharmaceuticals, engineering, government services and SaaS"
+  ],
   "focusAreas": [
     {
-      "title": "Operational Support",
-      "description": "Investigating issues methodically and helping keep workflows dependable for the people who use them."
+      "title": "Operational Excellence",
+      "icon": "delivery",
+      "tagline": "Calm execution under pressure",
+      "description": "I work well in environments where accuracy, timing and communication matter. From investment operations to government-service platforms, I focus on keeping critical processes dependable.",
+      "bullets": [
+        "Incident, problem and release coordination",
+        "Clear handovers, documentation and stakeholder updates"
+      ]
     },
     {
-      "title": "Automation and Data",
-      "description": "Using Python and SQL to understand recurring tasks and shape clearer, more consistent ways of working."
+      "title": "Data And Automation",
+      "icon": "data",
+      "tagline": "Practical tools for repeatable work",
+      "description": "I use SQL, Python, scripting and reporting habits to investigate issues, validate changes, reduce repetitive work and create better operational visibility.",
+      "bullets": [
+        "SQL investigation, reconciliation and validation",
+        "Python automation, monitoring and reporting improvements"
+      ]
     },
     {
-      "title": "Technical Delivery",
-      "description": "Turning requirements and support needs into maintainable application improvements and clear communication."
+      "title": "Builder Mindset",
+      "icon": "commerce",
+      "tagline": "From support insight to product execution",
+      "description": "My Neutron.bg side-hustle gave me hands-on ownership of a Django e-commerce product, from catalog and checkout flows to admin workflows, deployment thinking and supplier-integration patterns.",
+      "bullets": [
+        "Django 5.1 e-commerce application build",
+        "Checkout, order lifecycle and supplier workflow design"
+      ]
     }
   ]
 }

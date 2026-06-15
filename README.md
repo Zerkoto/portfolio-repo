@@ -2,7 +2,7 @@
 
 Public portfolio website for [https://www.kpetrov.z.bg/](https://www.kpetrov.z.bg/).
 
-This repository began as GitHub Education's .NET Blazor portfolio template. It is now a custom, image-free portfolio focused on investment operations, application support, technical delivery, and automation.
+This repository began as GitHub Education's .NET Blazor portfolio template. It is now a custom portfolio focused on investment operations, application support, technical delivery, automation, and selected e-commerce project work.
 
 ## Start Here
 
@@ -21,10 +21,11 @@ Current sections:
 | --- | --- |
 | Hero and contact identity | `src/BlazorApp/wwwroot/sample-data/siteproperties.json` |
 | About and focus areas | `src/BlazorApp/wwwroot/sample-data/aboutme.json` |
+| Skill groups | `src/BlazorApp/wwwroot/sample-data/skills.json` |
 | Experience highlights | `src/BlazorApp/wwwroot/sample-data/experience.json` |
 | Professional contact icons | `src/BlazorApp/wwwroot/sample-data/socialicons.json` |
 
-The design intentionally uses CSS geometry rather than background photography. A real profile photo or new generated visuals can be added later after their content, licensing, dimensions and performance treatment are agreed.
+The hero uses an optimized profile portrait at `src/BlazorApp/wwwroot/images/profile/kristiyan-profile.jpg`, supported by CSS geometry and lightweight inline icons.
 
 ## Design Direction
 
@@ -32,7 +33,7 @@ The design intentionally uses CSS geometry rather than background photography. A
 - Optional light theme: silver-toned surfaces with green highlights.
 - Theme preference persists in local browser storage and initially follows the system color preference.
 - Stable keyboard-accessible navigation, visible focus treatment and reduced-motion support.
-- Public-facing copy avoids unverified seniority, qualifications, employment claims and confidential operational detail.
+- Public-facing copy should remain factual, confident, and privacy-conscious; do not add unverified metrics, confidential operational detail, or unsupported employment claims.
 
 ## Run Locally
 

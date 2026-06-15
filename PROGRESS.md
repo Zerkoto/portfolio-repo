@@ -4,6 +4,38 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-06-16 - Premium Hero, Skills And Experience Upgrade
+
+### Completed
+
+- Added an optimized upright hero portrait from the supplied profile photo and wired it into the portfolio hero.
+- Upgraded the hero into a two-column premium layout on desktop and a compact portrait-first layout on mobile.
+- Rewrote the About section to emphasize cross-sector experience, operational excellence, automation, technical delivery, Neutron.bg, and academic achievement.
+- Added a Skills section covering operations/support, data/automation, financial operations, and web/product delivery.
+- Restored the company-linked Experience section using the previously stored company URLs for Man Group, MaltaPost, Ricardo, Tungsten Network, Carebuilder, and AbbVie.
+- Added reusable inline SVG icons and richer card treatments across About, Skills and Experience.
+- Updated metadata and documentation so the site is no longer described as image-free.
+
+### Documented Decisions
+
+- The profile photo is stored as an optimized local web asset, not referenced from the Desktop source file.
+- Company links were restored from repo history and preserved exactly.
+- Neutron.bg remains positioned as a selected side-hustle technical project, not formal employment.
+- Public copy is more confident, but avoids invented metrics or confidential operational details.
+
+### Verification
+
+- Parsed all JSON content files successfully.
+- Ran `dotnet build .\MyPortfolio.sln --no-restore` successfully with zero warnings and zero errors.
+- Ran `dotnet publish .\src\BlazorApp\BlazorApp.csproj -c Release` successfully.
+- Verified in browser that the portrait loads, four skill cards render, seven experience cards render, six restored company links are present, and desktop/mobile layouts have no horizontal overflow.
+
+### Follow-Up
+
+- Review the stronger public wording before merging to production.
+- Consider adding a public Neutron.bg link only when the live/demo destination is ready and suitable.
+- Keep validating any future claims about metrics, responsibilities, certifications, or confidential financial workflows before publishing them.
+
 ## 2026-06-16 - General Progress Record Added
 
 ### Completed

@@ -1,29 +1,113 @@
 [
   {
-    "category": "Professional Focus",
-    "title": "Investment Operations Support",
-    "description": "Supporting operational workflows with careful investigation, application knowledge, and clear coordination around issues and improvements.",
-    "url": "",
-    "linkLabel": ""
+    "category": "Finance",
+    "company": "Man Group",
+    "role": "Middle Office Analyst and Application Support",
+    "sector": "Global investment management",
+    "title": "Man Group",
+    "icon": "finance",
+    "description": "Supporting investment operations, valuation workflows, performance review, production stability and automation across business-critical financial systems.",
+    "highlights": [
+      "NAV, pricing, P&L, reconciliation and portfolio-operation exposure",
+      "Python, SQL, monitoring and analytics work supporting operational efficiency",
+      "Cross-functional communication with operations, technology, risk and portfolio stakeholders"
+    ],
+    "url": "https://www.man.com/",
+    "linkLabel": "Visit Man Group"
   },
   {
-    "category": "Technical Practice",
-    "title": "Python, SQL and Automation",
-    "description": "Applying scripting, data querying, and automation thinking to make repeatable work clearer and more reliable.",
-    "url": "",
-    "linkLabel": ""
+    "category": "Postal Services",
+    "company": "Swift - Postal services",
+    "role": "Senior Support Specialist / Application Support Specialist",
+    "sector": "Postal, online payments and government services",
+    "title": "Swift - Postal services",
+    "icon": "systems",
+    "description": "Supported postal and online-payment services connected to government institutions, with a focus on operational continuity, transaction integrity and repeatable support processes.",
+    "highlights": [
+      "Supported front-end and back-end postal services across multiple government clients",
+      "Worked with SQL, RabbitMQ-related workflows, payment reports and audit support",
+      "Coordinated between support, delivery and development teams"
+    ],
+    "url": "https://www.maltapost.com/",
+    "linkLabel": "Visit MaltaPost"
   },
   {
-    "category": "Delivery",
-    "title": "Application Support and Change",
-    "description": "Working across technical and operational needs to support applications and deliver practical improvements.",
-    "url": "",
-    "linkLabel": ""
+    "category": "Engineering",
+    "company": "Ricardo",
+    "role": "Application Support Specialist",
+    "sector": "Automotive engineering and strategic consulting",
+    "title": "Ricardo",
+    "icon": "support",
+    "description": "Supported SharePoint on-premise environments and operational tooling for a global engineering client, balancing system administration, access control, database work and issue resolution.",
+    "highlights": [
+      "Supported SharePoint environments across UK, USA and China server farms",
+      "Worked with permissions, backups, firewall rules, SQL jobs and stored procedures",
+      "Created operational scripts to resolve recurring issues"
+    ],
+    "url": "https://www.ricardo.com/en",
+    "linkLabel": "Visit Ricardo"
   },
   {
-    "category": "Selected Personal Project",
-    "title": "Neutron E-Commerce Project",
-    "description": "A personal Django e-commerce project focused on building and presenting a usable web application.",
+    "category": "E-invoicing",
+    "company": "Tungsten Network",
+    "role": "Application Support Analyst",
+    "sector": "Electronic invoicing marketplace",
+    "title": "Tungsten Network",
+    "icon": "data",
+    "description": "Supported supplier and buyer invoicing workflows across web, back-end and data-mapping processes, combining application investigation with database and operational support.",
+    "highlights": [
+      "Provided TechOps support for web portals and back-end applications",
+      "Investigated supplier-buyer configuration and invoicing data issues",
+      "Used Oracle PL/SQL, Perl scripts and monitoring tools in support workflows"
+    ],
+    "url": "https://www.tungsten-network.com/",
+    "linkLabel": "Visit Tungsten Network"
+  },
+  {
+    "category": "Healthcare",
+    "company": "Carebuilder",
+    "role": "Software Applications Developer",
+    "sector": "Healthcare web applications",
+    "title": "Carebuilder",
+    "icon": "delivery",
+    "description": "Contributed to healthcare web and portal work while also supporting development operations, QA habits and user-facing application quality.",
+    "highlights": [
+      "Worked on healthcare websites and customer manual modules",
+      "Supported healthcare products for hospitals and client users",
+      "Combined web development, QA testing and application administration"
+    ],
+    "url": "https://www.carebuilder.com/",
+    "linkLabel": "Visit Carebuilder"
+  },
+  {
+    "category": "Pharmaceuticals",
+    "company": "AbbVie",
+    "role": "Technical Support Analyst",
+    "sector": "Pharmaceutical applications and field operations",
+    "title": "AbbVie",
+    "icon": "support",
+    "description": "Supported pharmaceutical business users and corporate applications with disciplined helpdesk, access, device and CRM support practices.",
+    "highlights": [
+      "Provided 1st level support through ServiceNow and phone channels",
+      "Supported Windows, Apple, VPN, Office 365, Salesforce and Veeva CRM use cases",
+      "Maintained knowledge records and support documentation for healthcare representatives"
+    ],
+    "url": "https://www.abbvie.com/",
+    "linkLabel": "Visit AbbVie"
+  },
+  {
+    "category": "Selected Project",
+    "company": "Neutron.bg",
+    "role": "Django E-commerce Side Project",
+    "sector": "Personal technical project",
+    "title": "Neutron.bg",
+    "icon": "commerce",
+    "description": "Built a Django 5.1 e-commerce application as a side-hustle project, translating product, checkout, order and supplier-workflow ideas into a working web application structure.",
+    "highlights": [
+      "Product catalog, cart, checkout, account/profile pages and admin workflows",
+      "Payment-on-delivery order lifecycle and supplier-submission patterns",
+      "Deployment-oriented thinking for SuperHosting/cPanel, MariaDB/MySQL and static/media handling"
+    ],
     "url": "",
     "linkLabel": ""
   }

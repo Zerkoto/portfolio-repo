@@ -13,6 +13,11 @@
   --focus: #e0b94b;
   --header: rgba(12, 13, 15, 0.9);
   --shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+  --shadow-soft: 0 18px 42px rgba(0, 0, 0, 0.18);
+  --surface-glass: rgba(21, 24, 28, 0.72);
+  --accent-soft: rgba(224, 185, 75, 0.16);
+  --radius-lg: 1.25rem;
+  --radius-md: 0.75rem;
   --grid-line: rgba(224, 185, 75, 0.08);
 }
 
@@ -31,6 +36,11 @@
   --focus: #12613d;
   --header: rgba(244, 245, 242, 0.92);
   --shadow: 0 22px 48px rgba(21, 32, 25, 0.09);
+  --shadow-soft: 0 14px 30px rgba(21, 32, 25, 0.08);
+  --surface-glass: rgba(255, 255, 255, 0.78);
+  --accent-soft: rgba(18, 97, 61, 0.12);
+  --radius-lg: 1.25rem;
+  --radius-md: 0.75rem;
   --grid-line: rgba(18, 97, 61, 0.08);
 }
 
@@ -49,7 +59,9 @@ html {
 body {
   min-width: 0;
   margin: 0;
-  background: var(--background);
+  background:
+    radial-gradient(circle at 15% 5%, var(--accent-soft), transparent 24rem),
+    linear-gradient(135deg, var(--background), var(--background-raised));
   color: var(--text);
   font-family: "Segoe UI", "Inter", Arial, sans-serif;
   font-size: 1rem;
@@ -210,8 +222,6 @@ button:focus-visible {
 
 .hero {
   position: relative;
-  display: flex;
-  align-items: center;
   min-height: calc(100vh - 4.7rem);
   overflow: hidden;
 }
@@ -239,6 +249,16 @@ button:focus-visible {
   width: min(25rem, 42vw);
   height: 1px;
   background: var(--accent);
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(19rem, 0.72fr);
+  gap: clamp(2rem, 6vw, 4.5rem);
+  align-items: center;
+  width: 100%;
 }
 
 .hero-content {
@@ -273,11 +293,161 @@ button:focus-visible {
   font-size: clamp(1.08rem, 1.9vw, 1.23rem);
 }
 
+.proof-strip,
+.achievement-strip,
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.proof-strip {
+  margin-top: 1.6rem;
+}
+
+.proof-strip span,
+.achievement-strip span,
+.skill-tags span {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-glass);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-soft);
+}
+
+.proof-strip .icon-mark,
+.achievement-strip .icon-mark {
+  width: 1rem;
+  height: 1rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
   margin-top: 2.3rem;
+}
+
+.hero-visual {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  isolation: isolate;
+}
+
+.hero-visual::before {
+  position: absolute;
+  inset: 9% 7% 18% -8%;
+  z-index: -1;
+  border: 1px solid var(--accent);
+  border-radius: 2rem;
+  content: "";
+  opacity: 0.38;
+  transform: rotate(-5deg);
+}
+
+.portrait-card,
+.signal-card {
+  border: 1px solid var(--border);
+  background: var(--surface-glass);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.portrait-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+}
+
+.portrait-image,
+.portrait-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: calc(var(--radius-lg) - 0.35rem);
+}
+
+.portrait-image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portrait-placeholder {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--accent);
+  background:
+    linear-gradient(135deg, transparent 0 48%, var(--grid-line) 48% 49%, transparent 49%),
+    radial-gradient(circle at center, var(--accent-soft), transparent 68%),
+    var(--surface-strong);
+}
+
+.portrait-placeholder span {
+  display: grid;
+  width: min(9rem, 46%);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 700;
+}
+
+.portrait-caption {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.portrait-caption span,
+.sector-label {
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.portrait-caption strong {
+  font-size: 1.05rem;
+}
+
+.signal-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.8rem 0.9rem;
+  border-radius: 999px;
+}
+
+.signal-card span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.signal-card-primary {
+  margin-top: -2.6rem;
+  margin-left: -1.1rem;
+}
+
+.signal-card-secondary {
+  justify-self: end;
+  margin-top: -0.4rem;
 }
 
 .button {
@@ -314,6 +484,16 @@ button:focus-visible {
   margin-bottom: clamp(1.7rem, 4vw, 2.6rem);
 }
 
+.section-heading-row {
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.55fr);
+  align-items: end;
+}
+
+.section-note,
+.footer-intro {
+  color: var(--muted);
+}
+
 .section-intro {
   max-width: 51rem;
   color: var(--text);
@@ -326,8 +506,13 @@ button:focus-visible {
   color: var(--muted);
 }
 
+.achievement-strip {
+  margin: 0 0 2.25rem;
+}
+
 .focus-grid,
-.experience-grid {
+.experience-grid,
+.skills-grid {
   display: grid;
   gap: 1rem;
 }
@@ -340,6 +525,10 @@ button:focus-visible {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.skills-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -347,13 +536,82 @@ button:focus-visible {
   min-height: 100%;
   padding: clamp(1.25rem, 2.8vw, 1.7rem);
   border: 1px solid var(--border);
-  border-radius: 0.3rem;
-  background: var(--surface);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(145deg, var(--surface), var(--surface-strong));
   box-shadow: var(--shadow);
+  transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.card:hover {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+  box-shadow: var(--shadow);
+  transform: translateY(-0.15rem);
 }
 
 .card p:not(.card-label) {
   color: var(--muted);
+}
+
+.card-topline {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.icon-badge {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 2.7rem;
+  height: 2.7rem;
+  place-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.icon-mark {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.65;
+}
+
+.role-title {
+  color: var(--text) !important;
+  font-weight: 800;
+}
+
+.compact-list {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.05rem;
+  color: var(--muted);
+}
+
+.compact-list li::marker {
+  color: var(--accent);
+}
+
+.skill-card p {
+  min-height: 5rem;
+}
+
+.skill-tags {
+  margin-top: auto;
+}
+
+.skill-tags span {
+  min-height: 2rem;
+  padding: 0.3rem 0.55rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  box-shadow: none;
 }
 
 .text-link {
@@ -376,6 +634,10 @@ button:focus-visible {
 
 .footer-heading h2 {
   max-width: 24ch;
+}
+
+.footer-intro {
+  max-width: 44rem;
 }
 
 .contact-links {
@@ -491,8 +753,18 @@ button:focus-visible {
 }
 
 @media (max-width: 54rem) {
+  .hero-grid,
+  .section-heading-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    max-width: 32rem;
+  }
+
   .focus-grid,
-  .experience-grid {
+  .experience-grid,
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -509,12 +781,12 @@ button:focus-visible {
   }
 
   .nav-links {
-    gap: 0.7rem;
+    gap: 0.58rem;
   }
 
   .nav-links a {
-    font-size: 0.76rem;
-    letter-spacing: 0.04em;
+    font-size: 0.7rem;
+    letter-spacing: 0.025em;
   }
 
   .theme-toggle {
@@ -522,7 +794,8 @@ button:focus-visible {
   }
 
   .hero {
-    min-height: min(44rem, calc(100vh - 4.2rem));
+    min-height: auto;
+    padding-top: 3.3rem;
   }
 
   .hero::before {
@@ -533,6 +806,42 @@ button:focus-visible {
   .hero::after {
     bottom: 8%;
     width: 35vw;
+  }
+
+  .hero-grid {
+    gap: 2rem;
+  }
+
+  .hero-visual {
+    order: -1;
+    justify-self: end;
+    width: min(18rem, 82vw);
+  }
+
+  .portrait-card {
+    padding: 0.72rem;
+  }
+
+  .portrait-image,
+  .portrait-placeholder {
+    aspect-ratio: 5 / 4;
+    object-position: center 22%;
+  }
+
+  .portrait-caption {
+    display: none;
+  }
+
+  .proof-strip span,
+  .achievement-strip span {
+    flex: 1 1 100%;
+  }
+
+  .signal-card-primary,
+  .signal-card-secondary {
+    justify-self: stretch;
+    width: auto;
+    margin: 0;
   }
 
   .button {

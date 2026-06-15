@@ -1,12 +1,20 @@
 {
   "name": "Kristiyan Petrov",
-  "title": "Investment Operations and Application Support",
-  "heroEyebrow": "Python | SQL | Automation | Technical Delivery",
-  "heroSummary": "I work where investment operations and application support meet, using practical technology to support reliable workflows and clear outcomes.",
+  "title": "Investment Operations, Application Support and Automation",
+  "heroEyebrow": "Finance | Operations | Python | SQL | Delivery",
+  "heroSummary": "I connect business-critical operations with practical technology: supporting investment workflows, improving applications, automating repeatable work, and communicating clearly across technical and non-technical teams.",
+  "profileImage": "images/profile/kristiyan-profile.jpg",
+  "profileImageAlt": "Portrait of Kristiyan Petrov",
+  "proofPoints": [
+    "Investment operations",
+    "Application support",
+    "Python and SQL automation",
+    "Multi-sector delivery"
+  ],
   "primaryCtaLabel": "View experience",
   "primaryCtaHref": "#experience",
-  "secondaryCtaLabel": "Get in touch",
-  "secondaryCtaHref": "#contact",
+  "secondaryCtaLabel": "Explore skills",
+  "secondaryCtaHref": "#skills",
   "email": "kpetrov_business@outlook.com",
   "gitHub": "Zerkoto/portfolio-repo",
   "linkedIn": "zerkoto"

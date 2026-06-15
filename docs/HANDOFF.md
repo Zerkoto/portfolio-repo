@@ -21,6 +21,16 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-06-16 - Premium Portfolio Content And Hero Photo
+
+- Added the supplied profile photo as an optimized local hero asset at `src/BlazorApp/wwwroot/images/profile/kristiyan-profile.jpg`.
+- Upgraded the hero, About, Skills, Experience and Footer presentation for a more polished personal-brand portfolio while keeping the one-page Blazor structure.
+- Restored company-linked experience cards using the previously committed URLs for Man Group, MaltaPost, Ricardo, Tungsten Network, Carebuilder and AbbVie.
+- Added `skills.json`, `SkillGroup`, `Skills.razor`, and reusable inline SVG icon marks for richer About, Skills and Experience cards.
+- Updated README, AGENTS and PROGRESS documentation so the project no longer describes the site as image-free.
+- Verified JSON parsing, `dotnet build .\MyPortfolio.sln --no-restore`, `dotnet publish`, and browser rendering at desktop, 390px mobile and narrow 320px-class widths with no visible Blazor error state or horizontal overflow.
+- A local preview was run at `http://127.0.0.1:5080/` for review during this session.
+
 ### 2026-05-26 - Deployment Cleanup And Portfolio Redesign
 
 - Began implementing the approved target architecture: SuperHosting retains the paid domain, Azure DNS and Azure Static Web Apps remain the production route, and the obsolete GitHub Pages workflow is removed in this branch.

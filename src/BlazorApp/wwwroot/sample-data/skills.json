@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Operations And Support",
+    "icon": "support",
+    "description": "Reliable application support habits for complex production environments.",
+    "skills": [
+      "Incident and problem management",
+      "Application support",
+      "Release coordination",
+      "Stakeholder communication",
+      "Knowledge base documentation"
+    ]
+  },
+  {
+    "title": "Data And Automation",
+    "icon": "data",
+    "description": "Hands-on analysis and scripting for investigation, validation and reporting.",
+    "skills": [
+      "Python",
+      "SQL",
+      "PL/SQL",
+      "PowerShell",
+      "Excel",
+      "Monitoring and reporting"
+    ]
+  },
+  {
+    "title": "Financial Operations",
+    "icon": "finance",
+    "description": "Experience around investment operations, controls, reconciliation and valuation workflows.",
+    "skills": [
+      "NAV support",
+      "P&L checks",
+      "Reconciliations",
+      "Portfolio operations",
+      "Risk-aware change"
+    ]
+  },
+  {
+    "title": "Web And Product Delivery",
+    "icon": "commerce",
+    "description": "A practical builder's toolkit across Blazor, Django and e-commerce application delivery.",
+    "skills": [
+      "Blazor WebAssembly",
+      "Django 5.1",
+      "HTML/CSS/JavaScript",
+      "GitHub Actions",
+      "Azure Static Web Apps",
+      "SuperHosting/cPanel deployment"
+    ]
+  }
+]
