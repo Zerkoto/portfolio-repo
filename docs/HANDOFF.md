@@ -21,6 +21,16 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-06-16 - SEO Audit, Social Preview Card and Metadata Enhancements
+
+- Performed comprehensive SEO audit of the Blazor WASM portfolio (head metadata, JSON-LD, semantic components, robots/sitemap, content for E-E-A-T and AI signals).
+- Researched Blazor WASM SEO limitations and 2026 practices (GEO/AEO, schema enrichment, OG images for CTR and AI citation).
+- Generated 1200×630 og:image social card via image-to-image on the profile portrait (dark/gold branding matching site). Added to `wwwroot/images/kristiyan-og-card.jpg`.
+- Updated `index.html`: full `og:image` tags (with width/height/alt), `twitter:card` to `summary_large_image` + `twitter:image`, added Instagram to JSON-LD `sameAs`, added `image` to Person schema.
+- Bumped cache version.
+- Verified: clean `dotnet build`, local server shows tags in View Source and serves the image asset.
+- Benefits: stronger social previews and modern search/AI entity understanding.
+
 ### 2026-06-16 - Instagram Contact Link Restored
 
 - Restored `src/BlazorApp/wwwroot/images/socials/instagram.svg` from repository history.

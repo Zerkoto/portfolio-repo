@@ -4,6 +4,39 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-06-16 - SEO Audit, Social Preview Card and Metadata Enhancements
+
+### Completed
+
+- Conducted a full SEO audit covering `<head>` metadata, JSON-LD structured data, semantic HTML in components (Home, About, Skills, Experience), robots.txt, sitemap.xml, performance hints, and content richness.
+- Researched Blazor WebAssembly SEO specifics (JS-rendered shell challenges, importance of static index.html signals) and 2026 modern practices including Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), E-E-A-T signals, entity optimization via schema, and OG images for improved CTR and AI citation.
+- Generated a 1200×630 professional social preview card using image-to-image transformation on the existing `kristiyan-profile.jpg` (preserving accurate likeness) with dark/gold site branding, name, title, and domain. Committed as `src/BlazorApp/wwwroot/images/kristiyan-og-card.jpg`.
+- Updated `index.html`:
+  - Added complete Open Graph image metadata (`og:image`, `og:image:width="1200"`, `og:image:height="630"`, `og:image:alt`).
+  - Upgraded `<meta name="twitter:card">` to `"summary_large_image"` and added `twitter:image`.
+  - Enriched JSON-LD `Person`: added Instagram to `sameAs` array (was present in footer data but missing from schema), added `"image"` property referencing the profile photo.
+- Bumped CSS cache-buster version (`v=20260616-og-image`).
+
+### Documented Decisions
+
+- Chose absolute production URLs in meta tags for correct behavior post-deploy (local server still serves the asset at `/images/kristiyan-og-card.jpg` for testing).
+- Focused on high-impact metadata and visual asset improvements; larger architectural change (build-time prerendering for better WASM initial HTML) noted as follow-up.
+- Ensured Instagram (recently restored to footer) is now consistently represented in structured data for entity linking and AI/search.
+
+### Verification
+
+- `dotnet build .\MyPortfolio.sln --no-restore` completed successfully with zero warnings and zero errors.
+- Ran local dev server; confirmed new meta tags visible via View Page Source, new image served directly, and JSON-LD parsable.
+- Image is ~150KB, optimized for web/social.
+- Changes align with researched best practices for both traditional SEO and AI-driven discovery.
+
+### Follow-Up
+
+- After merge/deploy, use Google Search Console to submit sitemap, monitor indexing, rich results, and Core Web Vitals.
+- Test live social cards with official debuggers (Facebook Sharing Debugger, X Card Validator, LinkedIn Post Inspector).
+- Consider adding build-time prerendering or static HTML snapshots in a future batch to improve crawlability of the Blazor WASM content beyond the shell.
+- Expand Person schema (e.g. jobTitle, alumniOf, detailed knowsAbout) only after confirming public wording with user.
+
 ## 2026-06-16 - Instagram Contact Link Restored
 
 ### Completed
