@@ -7,6 +7,7 @@ This repository began as GitHub Education's .NET Blazor portfolio template. It i
 ## Start Here
 
 - Future agent work: [AGENTS.md](./AGENTS.md)
+- Dated project progress: [PROGRESS.md](./PROGRESS.md)
 - Current project handoff: [docs/HANDOFF.md](./docs/HANDOFF.md)
 - Hosting, DNS and deployment map: [docs/HOSTING.md](./docs/HOSTING.md)
 

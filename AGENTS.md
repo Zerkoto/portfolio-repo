@@ -6,7 +6,10 @@ Before changing this repository, read:
 
 1. `docs/HANDOFF.md` for the latest working state and unfinished decisions.
 2. `docs/HOSTING.md` before touching deployments, domains, DNS, GitHub Actions, or Azure configuration.
-3. `README.md` for the inherited Blazor portfolio-template customization guide.
+3. `PROGRESS.md` for the dated durable history of meaningful project changes.
+4. `README.md` for the inherited Blazor portfolio-template customization guide.
+
+Update `PROGRESS.md` after any meaningful product, architecture, deployment, or documentation change batch. Keep it dated and durable; do not use it as a live branch, pull-request, or working-tree status tracker.
 
 Update `docs/HANDOFF.md` after any coherent change batch that affects the project state, deployment process, or next-agent context.
 
