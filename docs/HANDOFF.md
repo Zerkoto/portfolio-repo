@@ -21,6 +21,15 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-06-17 - Hero Portrait Direction Adjustment
+
+- Changed only the rendered hero portrait styling so the approved profile image appears mirrored and visually faces the adjacent hero copy.
+- Affected files: `src/BlazorApp/wwwroot/css/app.css`, `src/BlazorApp/wwwroot/index.html`, `PROGRESS.md`, `docs/HANDOFF.md`.
+- Verified `origin/main` was current before editing; ran `dotnet build .\MyPortfolio.sln --no-restore` successfully with zero warnings and zero errors.
+- No deployment, DNS, Azure, GitHub Actions, metadata image, or source portrait asset changes were made.
+- Pull request: `https://github.com/Zerkoto/portfolio-repo/pull/4`.
+- Unfinished work: after merge and Azure Static Web Apps deployment, review the live hero visual at `https://www.kpetrov.z.bg/`.
+
 ### 2026-06-16 - SEO Audit, Social Preview Card and Metadata Enhancements
 
 - Performed comprehensive SEO audit of the Blazor WASM portfolio (head metadata, JSON-LD, semantic components, robots/sitemap, content for E-E-A-T and AI signals).
@@ -30,6 +39,7 @@ Read the newest entry first when resuming work. Git history remains the authorit
 - Bumped cache version.
 - Verified: clean `dotnet build`, local server shows tags in View Source and serves the image asset.
 - Benefits: stronger social previews and modern search/AI entity understanding.
+- Note: This batch was Grok-initiated. Per user request, future non-Codex agent work will prefer a `Grok/` branch prefix (the `codex/` convention in AGENTS.md is specific to Codex-driven changes and creates no technical or handoff problems for other agents). The PR for this work was created/merged under the existing naming for continuity.
 
 ### 2026-06-16 - Instagram Contact Link Restored
 

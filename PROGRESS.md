@@ -4,6 +4,19 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-06-17 - Hero Portrait Direction Adjustment
+
+### Completed
+
+- Mirrored the rendered hero portrait with CSS so Kristiyan appears to look back toward the adjacent hero text on desktop layouts.
+- Bumped the stylesheet cache version in `index.html` so deployed clients request the updated hero styling.
+- Kept the approved profile photo asset, social preview card, metadata image reference, and portfolio content unchanged.
+
+### Verification
+
+- Fetched `origin/main` before editing and confirmed local `HEAD` matched `origin/main`.
+- Ran `dotnet build .\MyPortfolio.sln --no-restore` successfully with zero warnings and zero errors.
+
 ## 2026-06-16 - SEO Audit, Social Preview Card and Metadata Enhancements
 
 ### Completed
