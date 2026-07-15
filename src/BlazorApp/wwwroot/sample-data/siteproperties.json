@@ -1,16 +1,16 @@
 {
   "name": "Kristiyan Petrov",
-  "title": "Developer, Investment Middle Office Analyst and AI-Assisted Automation",
-  "heroEyebrow": "Developer | Investment | AI Agents | Python | SQL",
-  "heroSummary": "I connect software development with Middle Office financial analysis: building AI-assisted workflows with Python and SQL while understanding investment operations, pricing, valuation and instrument lifecycle detail.",
+  "title": "Developer, Commodity Pricing Middle Office and AI-Assisted Automation",
+  "heroEyebrow": "Developer | Commodity Pricing | AI Agents | Python | SQL",
+  "heroSummary": "I connect software development and automation with Commodity Pricing Middle Office work at Louis Dreyfus Company, combining Python, SQL and AI-assisted workflows with knowledge of physical agricultural markets, futures and options, pricing, valuation, P&L and risk.",
   "profileImage": "images/profile/kristiyan-profile.jpg",
   "profileImageAlt": "Portrait of Kristiyan Petrov",
   "proofPoints": [
-    "Investment analysis",
+    "Commodity pricing",
+    "Physical and futures markets",
     "AI-assisted development",
     "Python and SQL",
-    "Financial instruments",
-    "Business results"
+    "P&L and risk controls"
   ],
   "primaryCtaLabel": "View experience",
   "primaryCtaHref": "#experience",

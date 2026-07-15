@@ -5,7 +5,7 @@ namespace BlazorApp.Services;
 
 public sealed class PortfolioContentService(HttpClient client)
 {
-    private const string ContentVersion = "v=20260616-instagram-social";
+    private const string ContentVersion = "v=20260716-ldc-pricing";
 
     private Task<SiteProperties?>? _siteProperties;
     private Task<AboutMe?>? _aboutMe;
