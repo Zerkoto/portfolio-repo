@@ -1,5 +1,22 @@
 [
   {
+    "category": "Commodity Finance",
+    "company": "Louis Dreyfus Company",
+    "role": "Senior Pricing Middle Officer",
+    "sector": "Global agricultural commodity merchandising, processing and logistics",
+    "title": "Louis Dreyfus Company",
+    "icon": "finance",
+    "description": "Work at the intersection of physical commodity trading, pricing control, market data and technology, supporting reliable valuation, P&L and risk information across agricultural commodity operations.",
+    "highlights": [
+      "Pricing and valuation controls across physical commodities, cash markets, futures, options and exchange-linked price components",
+      "Market-data and curve governance covering price completeness, metadata, units, instrument mappings and downstream data quality",
+      "Reconciliation, P&L and risk support connecting Trading, Market Risk, Credit Risk, Technology and Middle Office stakeholders",
+      "Process improvement through Excel, Python and automation-oriented analysis of manual pricing and data workflows"
+    ],
+    "url": "https://www.ldc.com/",
+    "linkLabel": "Visit Louis Dreyfus Company"
+  },
+  {
     "category": "Finance",
     "company": "Man Group",
     "role": "Middle Office Financial Analyst and Application Support",
@@ -60,7 +77,7 @@
       "Investigated supplier-buyer configuration and invoicing data issues",
       "Used Oracle PL/SQL, Perl scripts and monitoring tools in support workflows"
     ],
-    "url": "https://www.tungsten-network.com/",
+    "url": "https://www.tungstenautomation.com/products/einvoice-network",
     "linkLabel": "Visit Tungsten Network"
   },
   {
@@ -96,17 +113,17 @@
     "linkLabel": "Visit AbbVie"
   },
   {
-    "category": "Selected Project",
+    "category": "Independent Product Delivery",
     "company": "Neutron.bg",
-    "role": "Django E-commerce Project",
-    "sector": "Live technical project",
+    "role": "Django E-commerce Platform",
+    "sector": "Full-stack product development and e-commerce",
     "title": "Neutron.bg",
     "icon": "commerce",
-    "description": "Built and operate a live Django 5.1 e-commerce application, translating product, checkout, order and supplier-workflow ideas into a working web storefront.",
+    "description": "Designed, built and continue to operate a live Django e-commerce platform, turning commercial requirements into a dependable customer and administration experience.",
     "highlights": [
-      "Product catalog, cart, checkout, account/profile pages and admin workflows",
-      "Payment-on-delivery order lifecycle and supplier-submission patterns",
-      "Deployment-oriented thinking for SuperHosting/cPanel, MariaDB/MySQL and static/media handling"
+      "End-to-end product delivery across catalog, cart, checkout, customer accounts and administration",
+      "Operational ownership of order-lifecycle and supplier-submission workflows",
+      "Deployment and hosting practices across Django 5.1, MariaDB/MySQL and SuperHosting/cPanel"
     ],
     "url": "https://www.neutron.bg/",
     "linkLabel": "Visit Neutron.bg"

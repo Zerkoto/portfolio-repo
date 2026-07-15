@@ -21,6 +21,16 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-07-16 - LDC Senior Pricing Middle Officer Experience
+
+- Added Louis Dreyfus Company as the newest Experience card and updated the hero, About, Skills, footer, page title, SEO metadata, structured data and README to reflect commodity pricing, physical agricultural markets, valuation, P&L, risk, Python, SQL and AI-assisted automation.
+- Renamed the Neutron.bg category from `Selected Project` to `Independent Product Delivery` and rewrote its role, sector, description and evidence in a more professional product-delivery voice.
+- Updated the dead Tungsten Network homepage link to the current official Tungsten e-Invoice Network product page; no hosting, DNS, Azure, GitHub Actions, dependency, theme or profile-photo changes were made.
+- Verified JSON parsing, `git diff --check`, restore, build and Release publish; browser-tested desktop and mobile layouts, dark/light theme switching, navigation, eight Experience cards with LDC first, no horizontal overflow and no browser-console errors.
+- Automated link checks succeeded for six Experience destinations. LDC and AbbVie returned HTTP 403 to scripted requests but retain their canonical official URLs.
+- Branch: `codex/add-ldc-pricing-experience`. Pull-request title: `Add LDC Senior Pricing Middle Officer experience`. Do not merge automatically; review the Azure Static Web Apps preview first.
+- Unfinished visual decision: `src/BlazorApp/wwwroot/images/kristiyan-og-card.jpg` still contains the previous embedded subtitle and should be refreshed separately without changing the approved portrait or layout.
+
 ### 2026-06-17 - Hero Portrait Direction Adjustment
 
 - Changed only the rendered hero portrait styling so the approved profile image appears mirrored and visually faces the adjacent hero copy.

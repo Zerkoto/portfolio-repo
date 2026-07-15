@@ -37,16 +37,17 @@
     ]
   },
   {
-    "title": "Investment And Middle Office Analysis",
+    "title": "Commodity Pricing And Middle Office",
     "icon": "finance",
-    "description": "Middle Office financial analysis across investment operations, markets, valuation, controls and instrument lifecycle workflows.",
+    "description": "Pricing and Middle Office analysis across physical commodity markets, exchange-traded instruments, valuation, controls and downstream risk workflows.",
     "skills": [
-      "Investment analysis",
-      "Stocks and crypto markets",
-      "Derivatives and OTC products",
-      "Pricing and valuation",
-      "NAV support",
-      "P&L checks",
+      "Physical commodity pricing",
+      "Cash and futures curves",
+      "Basis, premiums and freight",
+      "Futures and options",
+      "Mark-to-market valuation",
+      "P&L and exposure analysis",
+      "Market and credit risk awareness",
       "Reconciliations"
     ]
   },

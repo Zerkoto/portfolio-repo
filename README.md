@@ -2,7 +2,7 @@
 
 Public portfolio website for [https://www.kpetrov.z.bg/](https://www.kpetrov.z.bg/).
 
-This repository began as GitHub Education's .NET Blazor portfolio template. It is now a custom portfolio focused on investment operations, application support, technical delivery, automation, and selected e-commerce project work.
+This repository began as GitHub Education's .NET Blazor portfolio template. It is now a custom portfolio focused on commodity pricing, Middle Office, software development, application support, automation and independent e-commerce product delivery.
 
 ## Start Here
 

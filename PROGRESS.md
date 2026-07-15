@@ -4,6 +4,34 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-07-16 - LDC Commodity Pricing Experience And Portfolio Positioning
+
+### Completed
+
+- Added Louis Dreyfus Company as the newest Experience entry, presenting the confirmed Senior Pricing Middle Officer role through public-safe commodity-pricing, valuation, market-data, P&L, risk and automation responsibilities.
+- Repositioned the hero, About, Skills, footer, page title, SEO metadata and structured data around commodity pricing, physical agricultural markets, futures and options, Python, SQL and AI-assisted automation while preserving the Man Group, development, support and Neutron.bg background.
+- Reframed Neutron.bg from `Selected Project` to `Independent Product Delivery` and rewrote the card as professional evidence of end-to-end Django e-commerce platform delivery and operation.
+- Updated the obsolete Tungsten Network homepage link to the current Tungsten e-Invoice Network product page after the former URL returned HTTP 404.
+- Bumped the JSON content cache version without changing the approved profile portrait, themes, components, hosting configuration or deployment workflows.
+
+### Documented Decisions
+
+- Keep LDC wording at the responsibility and professional-focus level; do not publish internal systems, identifiers, operating weaknesses, positions, counterparties, exposures or unsupported results.
+- Present LDC as a global agricultural commodity merchant, processor and logistics operator, not as an investment firm or as evidence of personal trading authority.
+- Keep the existing social-preview artwork unchanged for now because its embedded subtitle is part of an approved generated image; its wording should be refreshed in a dedicated visual asset pass without changing the portrait.
+
+### Verification
+
+- Parsed every JSON file under `src/BlazorApp/wwwroot/sample-data` successfully and ran `git diff --check`.
+- Ran `dotnet restore .\MyPortfolio.sln`, `dotnet build .\MyPortfolio.sln --no-restore` and `dotnet publish .\src\BlazorApp\BlazorApp.csproj -c Release --no-restore` successfully; the build completed with zero warnings and zero errors.
+- Verified the rendered site at 1440px and 390px widths in dark and light themes: LDC appears first among eight Experience cards, navigation works, no Blazor or browser-console errors appear, and no horizontal overflow occurs.
+- Confirmed every Experience card exposes the intended external URL. Direct automated requests succeeded for Man Group, MaltaPost, Ricardo, Carebuilder, Neutron.bg and the replacement Tungsten page; LDC and AbbVie blocked the scripted request with HTTP 403, so their canonical official URLs were retained.
+
+### Follow-Up
+
+- Refresh the embedded subtitle in `kristiyan-og-card.jpg` in a separately reviewed visual-asset change so social previews match the new commodity-pricing title while preserving the approved portrait and design.
+- Review the Azure Static Web Apps preview created by the pull request before merging; do not merge automatically.
+
 ## 2026-06-17 - Hero Portrait Direction Adjustment
 
 ### Completed
