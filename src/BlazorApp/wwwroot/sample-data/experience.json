@@ -23,13 +23,12 @@
     "sector": "Systematic trading and alternative investment management",
     "title": "Man Group",
     "icon": "finance",
-    "description": "Supported systematic trading funds at Man Group, the world's largest publicly listed hedge fund manager, with hands-on responsibility for pricing inputs, fund reporting and application support.",
+    "description": "Combined investment operations, product control and application support for systematic funds at Man Group, the world's largest publicly listed hedge fund manager.",
     "highlights": [
-      "Investigated pricing and valuation inputs using Bloomberg terminals",
-      "Reviewed fund P&L reports and tied out financial figures to custodians and fund administrators",
-      "Rebalanced feeder-fund GAV (notional trading capital) against NAV held in master funds",
-      "Worked with trading feeder funds that contributed assets to the master funds",
-      "Investigated data and application issues using Python, SQL and monitoring tools"
+      "Analyzed Bloomberg and internal pricing data alongside fund P&L to investigate valuation and reporting discrepancies",
+      "Reconciled financial records with custodians and fund administrators, investigating breaks between internal and external reporting",
+      "Rebalanced notional trading capital (GAV) against NAV across master–feeder structures, keeping trading levels aligned with fund capital",
+      "Used Python and SQL to investigate financial-data issues and support Middle Office applications and reporting"
     ],
     "url": "https://www.man.com/",
     "linkLabel": "Visit Man Group"

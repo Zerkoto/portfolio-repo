@@ -1,15 +1,15 @@
 [
   {
-    "title": "Systematic fund operations",
+    "title": "Investment operations",
     "icon": "finance",
-    "description": "Fund-level analysis and controls from hands-on Middle Office work at Man Group.",
+    "description": "Pricing, performance and capital controls for systematic funds, combining financial analysis with technical investigation.",
     "skills": [
-      "Bloomberg terminals",
-      "Pricing data",
-      "Fund P&L",
-      "Custodian / FA tie-outs",
-      "GAV / NAV rebalancing",
-      "Master / feeder funds"
+      "Bloomberg market data",
+      "P&L analysis",
+      "Fund reconciliation",
+      "Custodian / administrator controls",
+      "Trading capital rebalancing",
+      "Master / feeder structures"
     ]
   },
   {

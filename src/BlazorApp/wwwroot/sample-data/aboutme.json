@@ -1,6 +1,6 @@
 {
-  "introduction": "My career connects finance and technology: systematic fund operations at Man Group, commodity pricing at Louis Dreyfus Company, and hands-on development and application support across several industries.",
-  "evidence": "I trace financial numbers back to their source, investigate data breaks and explain the findings to finance and technology colleagues. Alongside my finance roles, I build and run Neutron.bg, a live Django e-commerce platform.",
+  "introduction": "I work where financial analysis and technology meet: understanding how a number is produced, investigating discrepancies and tracing issues through the systems behind it.",
+  "evidence": "My background spans systematic investment operations at Man Group, commodity pricing at Louis Dreyfus Company and production application support. Alongside those roles, I designed, built and continue to run Neutron.bg, a live Django e-commerce platform.",
   "highlights": [
     {
       "text": "Systematic trading fund experience at Man Group",
@@ -22,13 +22,13 @@
   ],
   "focusAreas": [
     {
-      "title": "Systematic fund operations",
+      "title": "Systematic investment operations",
       "icon": "finance",
       "tagline": "Man Group",
-      "description": "Middle Office experience at the world's largest publicly listed hedge fund manager, connecting systematic-fund reporting, market data and application support.",
+      "description": "At Man Group, I worked across the financial data and systems that underpin systematic funds, connecting pricing, performance reporting and capital rebalancing.",
       "bullets": [
-        "Fund P&L and financial tie-outs to custodians and fund administrators",
-        "GAV/NAV alignment across master and feeder funds"
+        "Pricing and performance analysis",
+        "Fund reconciliations and trading-capital controls"
       ]
     },
     {

@@ -8,7 +8,8 @@ Use this as the durable project history for completed change batches, documented
 
 ### Completed
 
-- Replaced generic, repetitive portfolio copy with specific responsibilities: Bloomberg pricing inputs, fund P&L, custodian/fund-administrator tie-outs, and feeder GAV (notional trading capital) rebalancing against master-fund NAV. Kept LDC as the first Experience entry and retained all eight employers/projects.
+- Replaced generic, repetitive portfolio copy with a researched investment-operations and product-control narrative, supported by confirmed pricing/performance analysis, external reconciliation, trading-capital rebalancing and application-support responsibilities. Kept LDC as the first Experience entry and retained all eight employers/projects.
+- Used Man Group's official Middle Office role descriptions and biographies, plus archived related roles, to establish terminology rather than reproduce raw background notes. Recorded the source context and personal-claim boundaries in `docs/CONTENT_SOURCES.md`.
 - Described Man Group as the world's largest publicly listed hedge fund manager, supported by LSEG's interview with its CIO and Hedgeweek's July 2026 reporting. This avoids conflating publicly listed managers with all hedge funds.
 - Balanced six Skills cards across desktop/tablet/mobile grids and aligned card headings, descriptions, lists and links with CSS subgrid. Refined spacing, borders, focus states, buttons and external-link icons while preserving the approved portrait and both themes.
 - Led the mobile hero with career information; replaced tiny navigation links with an accessible expandable menu that closes after navigation or Escape and restores keyboard focus.
