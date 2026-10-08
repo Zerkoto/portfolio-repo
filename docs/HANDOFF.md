@@ -21,6 +21,16 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-10-08 - Recruiter Copy And Responsive UI Polish
+
+- Rewrote portfolio JSON, component headings, footer and metadata around confirmed systematic-fund responsibilities at Man Group alongside current LDC pricing and technical delivery. Man Group wording uses the verified qualifier `publicly listed`; scope includes Bloomberg pricing, P&L, custodian/FA tie-outs and the user's described feeder GAV/master NAV structure.
+- Refined `app.css` for aligned card content with subgrid/flex fallback and six Skills cards in 3/2/1 columns. Mobile shows the career introduction first and uses an expandable, keyboard-accessible menu. Preserved portrait, themes, external destinations, hosting and workflows.
+- Fixed missing `BlazorApp.styles.css`, guarded theme storage and malformed hashes, restored anchors after delayed JSON renders, and corrected keyboard skip-link focus. CSS/content versions are `20261008-recruiter-polish`.
+- Verified JSON/diff checks, solution build (zero warnings/errors), Release publish and Chromium views at 320–2560px, both themes, menu/keyboard/theme persistence, denied storage and 2.2-second delayed-content anchors; no horizontal overflow or browser/request errors. Installed the pinned .NET 8.0.408 SDK in this session at `/workspace/.dotnet`; no toolchain files or dependencies changed.
+- Feature branch: `codex/portfolio-recruiter-polish`. Review its Azure Static Web Apps preview before merging; do not merge automatically.
+- Still outstanding: approved social-preview artwork contains the previous subtitle; .NET 10 migration remains separate.
+- Scale wording sources: [LSEG CIO interview](https://www.lseg.com/en/solutions/hedge-funds/podcast/hedge-fund-huddle/season-4-episode-1-centuries-strategy-a-conversation-with-man-groups-cio) and [Hedgeweek, 2026-07-28](https://hedgeweek.com/news/man-group-assets-hit-record-253-6bn-after-strong-h1-inflows-and-performance).
+
 ### 2026-07-16 - LDC Senior Pricing Middle Officer Experience
 
 - Added Louis Dreyfus Company as the newest Experience card and updated the hero, About, Skills, footer, page title, SEO metadata, structured data and README to reflect commodity pricing, physical agricultural markets, valuation, P&L, risk, Python, SQL and AI-assisted automation.

@@ -2,15 +2,20 @@
 
 @inject IJSRuntime JS
 
-<a class="skip-link" href="#main-content">Skip to main content</a>
+<a class="skip-link" href="#main-content" @onclick="SkipToMain" @onclick:preventDefault="true">Skip to main content</a>
 <Header />
 
-<main id="main-content">
+<main id="main-content" tabindex="-1">
     @Body
 </main>
 <Footer />
 
 @code {
+    private async Task SkipToMain()
+    {
+        await JS.InvokeVoidAsync("portfolioNavigation.focusMainContent");
+    }
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)

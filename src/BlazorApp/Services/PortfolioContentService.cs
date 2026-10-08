@@ -5,7 +5,7 @@ namespace BlazorApp.Services;
 
 public sealed class PortfolioContentService(HttpClient client)
 {
-    private const string ContentVersion = "v=20260716-ldc-pricing";
+    private const string ContentVersion = "v=20261008-recruiter-polish";
 
     private Task<SiteProperties?>? _siteProperties;
     private Task<AboutMe?>? _aboutMe;

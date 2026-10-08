@@ -1,68 +1,64 @@
 {
-  "introduction": "I am a developer and Senior Pricing Middle Officer at Louis Dreyfus Company, with many years of cross-sector experience spanning physical agricultural commodity markets, investment management, pharmaceutical support, e-invoicing, healthcare applications, engineering environments, postal services and independent e-commerce delivery.",
-  "evidence": "My strongest pattern is connecting financial detail with practical technology. I combine software development, SQL investigation, Python and Excel analysis, AI-assisted automation, pricing and valuation controls, P&L and risk awareness, and clear stakeholder communication to make complex workflows more reliable.",
+  "introduction": "My career connects finance and technology: systematic fund operations at Man Group, commodity pricing at Louis Dreyfus Company, and hands-on development and application support across several industries.",
+  "evidence": "I trace financial numbers back to their source, investigate data breaks and explain the findings to finance and technology colleagues. Alongside my finance roles, I build and run Neutron.bg, a live Django e-commerce platform.",
   "highlights": [
     {
-      "text": "Master's Degree in E-Management, graduated with Honours and full academic excellence",
-      "icon": "education"
-    },
-    {
-      "text": "Senior Pricing Middle Officer in global agricultural commodity markets",
+      "text": "Systematic trading fund experience at Man Group",
       "icon": "finance"
     },
     {
-      "text": "Live Django e-commerce project: Neutron.bg",
+      "text": "Senior Pricing Middle Officer at Louis Dreyfus Company",
+      "icon": "finance"
+    },
+    {
+      "text": "Built and operate Neutron.bg",
       "icon": "commerce",
       "url": "https://www.neutron.bg/"
     },
     {
-      "text": "Daily AI tools and coding-agent workflows for development, analysis and delivery",
-      "icon": "automation"
-    },
-    {
-      "text": "Pricing knowledge across physical markets, futures, options, basis, freight and FX",
-      "icon": "finance"
+      "text": "Master's in E-Management, graduated with Honours",
+      "icon": "education"
     }
   ],
   "focusAreas": [
     {
-      "title": "Developer Mindset",
-      "icon": "automation",
-      "tagline": "Code, AI and execution",
-      "description": "I work like a modern developer: using AI agents, structured analysis, code, tests and documentation to move faster while keeping the work understandable, maintainable and useful.",
-      "bullets": [
-        "AI-assisted coding, review, documentation and refactoring workflows",
-        "Python, SQL and practical automation for business and finance problems"
-      ]
-    },
-    {
-      "title": "Pricing And Middle Office",
+      "title": "Systematic fund operations",
       "icon": "finance",
-      "tagline": "Commodity markets, valuation and controls",
-      "description": "My experience now spans commodity pricing at Louis Dreyfus Company and investment-management operations at Man Group. I work with the connections between physical and logistics-linked trading, cash and exchange-traded prices, valuation, P&L, risk data, reconciliations and the technology that supports those workflows.",
+      "tagline": "Man Group",
+      "description": "Middle Office experience at the world's largest publicly listed hedge fund manager, connecting systematic-fund reporting, market data and application support.",
       "bullets": [
-        "Price curves, basis and premiums, freight and FX components, futures and options",
-        "Mark-to-market valuation, market and credit-risk data, reconciliations and collaboration across Trading, Middle Office, Risk and Technology"
+        "Fund P&L and financial tie-outs to custodians and fund administrators",
+        "GAV/NAV alignment across master and feeder funds"
       ]
     },
     {
-      "title": "Data And Automation",
+      "title": "Commodity pricing",
+      "icon": "finance",
+      "tagline": "Louis Dreyfus Company",
+      "description": "Current work in agricultural commodity markets, where physical prices, exchange-traded instruments and logistics inputs meet valuation and risk reporting.",
+      "bullets": [
+        "Price curves, basis, premiums, freight and FX components",
+        "Valuation controls and collaboration with Trading, Risk and Technology"
+      ]
+    },
+    {
+      "title": "Data & automation",
       "icon": "data",
-      "tagline": "Practical tools for repeatable work",
-      "description": "I use SQL, Python, scripting, AI-assisted analysis and reporting habits to investigate data breaks, validate financial workflows, automate checks and create better operational visibility.",
+      "tagline": "Python · SQL · Excel",
+      "description": "I use code to investigate mismatches, validate inputs and reduce repetitive checks, with AI-assisted development supporting the build and review process.",
       "bullets": [
-        "SQL investigation, reconciliation, pricing and validation checks",
-        "Python automation, monitoring and reporting improvements"
+        "SQL investigation and Python reporting tools",
+        "Repeatable validation, monitoring and operational scripts"
       ]
     },
     {
-      "title": "Builder Mindset",
+      "title": "Product development",
       "icon": "commerce",
-      "tagline": "Live product ownership",
-      "description": "Neutron.bg is my live Django e-commerce project: a working product where I own the catalog, checkout, order lifecycle, admin workflows and hosting/deployment thinking behind a real web storefront.",
+      "tagline": "Neutron.bg",
+      "description": "A live Django storefront that I designed, built and operate, from the customer journey to the administration and deployment behind it.",
       "bullets": [
-        "Live Django 5.1 e-commerce application at neutron.bg",
-        "Checkout, order lifecycle and supplier workflow design"
+        "Catalog, checkout, accounts and order lifecycle",
+        "Supplier workflows, administration and hosting"
       ]
     }
   ]

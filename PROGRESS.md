@@ -4,6 +4,28 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-10-08 - Systematic Fund Experience And Responsive Card Refinement
+
+### Completed
+
+- Replaced generic, repetitive portfolio copy with specific responsibilities: Bloomberg pricing inputs, fund P&L, custodian/fund-administrator tie-outs, and feeder GAV (notional trading capital) rebalancing against master-fund NAV. Kept LDC as the first Experience entry and retained all eight employers/projects.
+- Described Man Group as the world's largest publicly listed hedge fund manager, supported by LSEG's interview with its CIO and Hedgeweek's July 2026 reporting. This avoids conflating publicly listed managers with all hedge funds.
+- Balanced six Skills cards across desktop/tablet/mobile grids and aligned card headings, descriptions, lists and links with CSS subgrid. Refined spacing, borders, focus states, buttons and external-link icons while preserving the approved portrait and both themes.
+- Led the mobile hero with career information; replaced tiny navigation links with an accessible expandable menu that closes after navigation or Escape and restores keyboard focus.
+- Fixed the missing scoped-stylesheet request, theme behavior when storage is unavailable, initial browser theme color, malformed hash handling, delayed-content deep links and skip-link focus. Bumped CSS/content cache versions and synchronized page/SEO copy.
+
+### Verification
+
+- Captured and visually reviewed the live site and revised Release output in Chromium, including desktop/mobile and dark/light themes.
+- Confirmed no horizontal overflow at 320, 390, 600, 768, 1024, 1440, 1920 and 2560 pixels; checked eight Experience cards, four About cards and six Skills cards.
+- Verified menu interactions, Escape/focus behavior, theme persistence, keyboard skip navigation, and direct links with a 2.2-second content delay; tested denied browser storage and malformed hashes. No browser runtime errors or failed application requests remained.
+- Parsed all portfolio JSON, ran `git diff --check`, built the solution with zero warnings/errors and published Release using the pinned .NET 8.0.408 SDK.
+
+### Follow-Up
+
+- Review the Azure preview before merging. Production hosting and workflows are unchanged.
+- The previously documented social-preview image subtitle and .NET 10 migration remain separate follow-up work.
+
 ## 2026-07-16 - LDC Commodity Pricing Experience And Portfolio Positioning
 
 ### Completed

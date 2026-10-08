@@ -1,67 +1,80 @@
 [
   {
-    "title": "AI-Assisted Development",
-    "icon": "automation",
-    "description": "Daily use of AI tools and coding agents to accelerate development, analysis, documentation and delivery.",
+    "title": "Systematic fund operations",
+    "icon": "finance",
+    "description": "Fund-level analysis and controls from hands-on Middle Office work at Man Group.",
     "skills": [
-      "AI agents",
-      "Prompting",
-      "Code review",
-      "Rapid prototyping",
+      "Bloomberg terminals",
+      "Pricing data",
+      "Fund P&L",
+      "Custodian / FA tie-outs",
+      "GAV / NAV rebalancing",
+      "Master / feeder funds"
+    ]
+  },
+  {
+    "title": "Commodity pricing",
+    "icon": "finance",
+    "description": "Physical and exchange-linked pricing, valuation and market-data controls at Louis Dreyfus Company.",
+    "skills": [
+      "Physical commodity pricing",
+      "Cash / futures curves",
+      "Basis, freight & FX",
+      "Futures & options",
+      "Mark-to-market valuation",
+      "P&L & risk data"
+    ]
+  },
+  {
+    "title": "Data & automation",
+    "icon": "data",
+    "description": "Querying, scripting and analysis to find discrepancies and make recurring work repeatable.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Oracle PL/SQL",
+      "PowerShell",
+      "Excel",
+      "Reporting & validation"
+    ]
+  },
+  {
+    "title": "Web & product development",
+    "icon": "commerce",
+    "description": "End-to-end web delivery, backed by a live Django storefront and this Blazor portfolio.",
+    "skills": [
+      "Django 5.1",
+      "Blazor WebAssembly",
+      "HTML / CSS / JavaScript",
+      "MariaDB / MySQL",
+      "GitHub Actions / Azure",
+      "SuperHosting / cPanel"
+    ]
+  },
+  {
+    "title": "Application support",
+    "icon": "support",
+    "description": "Production investigation and user support across finance, engineering, healthcare and business services.",
+    "skills": [
+      "Production diagnostics",
+      "Monitoring",
+      "Incident investigation",
+      "Access administration",
+      "Stakeholder communication",
       "Technical documentation"
     ]
   },
   {
-    "title": "Development, Support And Results",
-    "icon": "support",
-    "description": "Developer-minded production habits for environments where reliability, user outcomes and clear communication matter.",
+    "title": "AI-assisted development",
+    "icon": "automation",
+    "description": "Daily use of AI tools and coding agents in development, analysis and delivery workflows.",
     "skills": [
-      "Production diagnostics",
-      "Application improvement",
-      "Workflow ownership",
-      "Stakeholder communication",
-      "Delivery documentation"
-    ]
-  },
-  {
-    "title": "Data And Automation",
-    "icon": "data",
-    "description": "Hands-on analysis and scripting for investigation, validation and reporting.",
-    "skills": [
-      "Python",
-      "SQL",
-      "PL/SQL",
-      "PowerShell",
-      "Excel",
-      "Monitoring and reporting"
-    ]
-  },
-  {
-    "title": "Commodity Pricing And Middle Office",
-    "icon": "finance",
-    "description": "Pricing and Middle Office analysis across physical commodity markets, exchange-traded instruments, valuation, controls and downstream risk workflows.",
-    "skills": [
-      "Physical commodity pricing",
-      "Cash and futures curves",
-      "Basis, premiums and freight",
-      "Futures and options",
-      "Mark-to-market valuation",
-      "P&L and exposure analysis",
-      "Market and credit risk awareness",
-      "Reconciliations"
-    ]
-  },
-  {
-    "title": "Web And Product Delivery",
-    "icon": "commerce",
-    "description": "A practical builder's toolkit across Blazor, Django, e-commerce and portfolio application delivery.",
-    "skills": [
-      "Blazor WebAssembly",
-      "Django 5.1",
-      "HTML/CSS/JavaScript",
-      "GitHub Actions",
-      "Azure Static Web Apps",
-      "SuperHosting/cPanel deployment"
+      "Coding agents",
+      "Code review",
+      "Refactoring",
+      "Rapid prototyping",
+      "Documentation",
+      "Workflow automation"
     ]
   }
 ]

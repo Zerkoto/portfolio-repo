@@ -1,16 +1,16 @@
 {
   "name": "Kristiyan Petrov",
-  "title": "Developer, Commodity Pricing Middle Office and AI-Assisted Automation",
-  "heroEyebrow": "Developer | Commodity Pricing | AI Agents | Python | SQL",
-  "heroSummary": "I connect software development and automation with Commodity Pricing Middle Office work at Louis Dreyfus Company, combining Python, SQL and AI-assisted workflows with knowledge of physical agricultural markets, futures and options, pricing, valuation, P&L and risk.",
+  "title": "Pricing Middle Office & Software Development",
+  "heroEyebrow": "Systematic funds · Commodity markets · Python & SQL",
+  "heroSummary": "Senior Pricing Middle Officer at Louis Dreyfus Company, with prior experience supporting systematic trading funds at Man Group. I combine fund operations, market data and software development to turn complex financial workflows into clear, reliable processes.",
   "profileImage": "images/profile/kristiyan-profile.jpg",
   "profileImageAlt": "Portrait of Kristiyan Petrov",
   "proofPoints": [
-    "Commodity pricing",
-    "Physical and futures markets",
-    "AI-assisted development",
+    "Systematic fund operations",
+    "Pricing & valuation",
+    "P&L reconciliation",
     "Python and SQL",
-    "P&L and risk controls"
+    "Live Django product"
   ],
   "primaryCtaLabel": "View experience",
   "primaryCtaHref": "#experience",

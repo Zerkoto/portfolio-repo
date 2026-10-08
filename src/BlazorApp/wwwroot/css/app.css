@@ -53,7 +53,7 @@
 html {
   background: var(--background);
   scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: 6rem;
 }
 
 body {
@@ -66,7 +66,6 @@ body {
   font-family: "Segoe UI", "Inter", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.65;
-  overflow-x: hidden;
   transition: background-color 160ms ease, color 160ms ease;
 }
 
@@ -83,6 +82,12 @@ h3 {
   font-family: Georgia, "Times New Roman", serif;
   letter-spacing: -0.025em;
   line-height: 1.1;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
 }
 
 h1 {
@@ -147,6 +152,7 @@ button:focus-visible {
 }
 
 .site-nav {
+  position: relative;
   display: flex;
   gap: 1.2rem;
   align-items: center;
@@ -155,6 +161,7 @@ button:focus-visible {
 
 .brand {
   display: grid;
+  flex-shrink: 0;
   width: 2.8rem;
   height: 2.8rem;
   place-items: center;
@@ -175,6 +182,9 @@ button:focus-visible {
 }
 
 .nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.8rem;
   color: var(--muted);
   font-size: 0.93rem;
   font-weight: 600;
@@ -210,6 +220,28 @@ button:focus-visible {
   background: var(--accent);
 }
 
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 2.8rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.menu-mark {
+  width: 1rem;
+  height: 0.7rem;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
 #main-content {
   display: block;
 }
@@ -222,7 +254,7 @@ button:focus-visible {
 
 .hero {
   position: relative;
-  min-height: calc(100vh - 4.7rem);
+  min-height: min(52rem, calc(100svh - 4.7rem));
   overflow: hidden;
 }
 
@@ -259,6 +291,12 @@ button:focus-visible {
   gap: clamp(2rem, 6vw, 4.5rem);
   align-items: center;
   width: 100%;
+}
+
+.hero-content,
+.hero-visual,
+.section-heading-row > * {
+  min-width: 0;
 }
 
 .hero-content {
@@ -320,7 +358,14 @@ button:focus-visible {
   color: var(--text);
   font-size: 0.9rem;
   font-weight: 700;
-  box-shadow: var(--shadow-soft);
+}
+
+.proof-strip span,
+.achievement-strip span,
+.achievement-strip a,
+.skill-tags span {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .achievement-strip a {
@@ -429,7 +474,7 @@ button:focus-visible {
 }
 
 .portrait-caption strong {
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .signal-card {
@@ -455,10 +500,6 @@ button:focus-visible {
   margin: 0;
 }
 
-.signal-card-secondary {
-  margin: 0;
-}
-
 .button {
   display: inline-flex;
   justify-content: center;
@@ -466,7 +507,7 @@ button:focus-visible {
   min-height: 3rem;
   padding: 0.65rem 1.2rem;
   border: 1px solid var(--accent);
-  border-radius: 0.15rem;
+  border-radius: var(--radius-md);
   font-size: 0.96rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -491,6 +532,10 @@ button:focus-visible {
   display: grid;
   gap: 0.85rem;
   margin-bottom: clamp(1.7rem, 4vw, 2.6rem);
+}
+
+.section + .section {
+  border-top: 1px solid var(--border);
 }
 
 .section-heading-row {
@@ -527,35 +572,40 @@ button:focus-visible {
 }
 
 .focus-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .experience-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .skills-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .card {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
-  min-height: 100%;
+  min-width: 0;
   padding: clamp(1.25rem, 2.8vw, 1.7rem);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   background:
     linear-gradient(145deg, var(--surface), var(--surface-strong));
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-soft);
   transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
 
-.card:hover {
+.card:focus-within {
   border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
-  box-shadow: var(--shadow);
-  transform: translateY(-0.15rem);
+}
+
+@media (hover: hover) {
+  .card:hover {
+    border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+    transform: translateY(-0.15rem);
+  }
 }
 
 .card p:not(.card-label) {
@@ -566,6 +616,14 @@ button:focus-visible {
   display: flex;
   gap: 0.75rem;
   align-items: center;
+}
+
+.skill-card .card-topline {
+  align-items: start;
+}
+
+.skill-card .card-topline h3 {
+  padding-top: 0.2rem;
 }
 
 .icon-badge {
@@ -597,6 +655,7 @@ button:focus-visible {
 
 .compact-list {
   display: grid;
+  align-content: start;
   gap: 0.45rem;
   margin: 0;
   padding-left: 1.05rem;
@@ -607,8 +666,15 @@ button:focus-visible {
   color: var(--accent);
 }
 
-.skill-card p {
-  min-height: 5rem;
+.card p.sector-label {
+  color: var(--accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  line-height: 1.6;
+}
+
+.compact-list li {
+  padding-left: 0.2rem;
 }
 
 .skill-tags {
@@ -627,6 +693,48 @@ button:focus-visible {
   margin-top: auto;
   padding-top: 0.25rem;
   font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  min-height: 2.75rem;
+  gap: 0.45rem;
+}
+
+.text-link .icon-mark {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+@supports (grid-template-rows: subgrid) {
+  .card {
+    display: grid;
+    grid-template-rows: subgrid;
+    align-content: start;
+    row-gap: 0.85rem;
+  }
+
+  .focus-card {
+    grid-row: span 4;
+  }
+
+  .skill-card {
+    grid-row: span 3;
+  }
+
+  .experience-card {
+    grid-row: span 7;
+  }
+
+  .skill-tags,
+  .text-link {
+    margin-top: 0;
+    align-self: start;
+  }
+
+  .skill-tags {
+    align-content: start;
+  }
 }
 
 .site-footer {
@@ -761,6 +869,12 @@ button:focus-visible {
   content: var(--blazor-load-percentage-text, "Loading");
 }
 
+@media (max-width: 64rem) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 54rem) {
   .hero-grid,
   .section-heading-row {
@@ -768,13 +882,9 @@ button:focus-visible {
   }
 
   .hero-visual {
-    max-width: 32rem;
-  }
-
-  .focus-grid,
-  .experience-grid,
-  .skills-grid {
-    grid-template-columns: 1fr;
+    max-width: 24rem;
+    justify-self: center;
+    width: 100%;
   }
 }
 
@@ -785,21 +895,56 @@ button:focus-visible {
   }
 
   .site-nav {
-    gap: 0.65rem;
-    min-height: 4.2rem;
+    gap: 0.75rem;
+    min-height: 4.6rem;
   }
 
   .nav-links {
-    gap: 0.58rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    background: var(--background-raised);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links[data-open="true"] {
+    display: grid;
   }
 
   .nav-links a {
-    font-size: 0.7rem;
-    letter-spacing: 0.025em;
+    justify-content: center;
+    min-height: 3rem;
+    border-radius: 0.35rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-links a:hover {
+    background: var(--surface);
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    margin-left: auto;
   }
 
   .theme-toggle {
-    padding: 0.48rem;
+    margin-left: 0;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .focus-grid,
+  .experience-grid,
+  .skills-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .hero {
@@ -822,9 +967,8 @@ button:focus-visible {
   }
 
   .hero-visual {
-    order: -1;
-    justify-self: end;
-    width: min(18rem, 82vw);
+    justify-self: center;
+    width: min(20rem, 100%);
   }
 
   .portrait-card {
@@ -841,14 +985,20 @@ button:focus-visible {
     display: none;
   }
 
-  .proof-strip span,
   .achievement-strip span,
   .achievement-strip a {
     flex: 1 1 100%;
   }
 
-  .signal-card-primary,
-  .signal-card-secondary {
+  .proof-strip {
+    gap: 0.5rem;
+  }
+
+  .proof-strip span {
+    font-size: 0.8rem;
+  }
+
+  .signal-card-primary {
     justify-self: stretch;
     width: auto;
     margin: 0;
@@ -856,26 +1006,6 @@ button:focus-visible {
 
   .button {
     flex: 1 1 100%;
-  }
-}
-
-@media (max-width: 23rem) {
-  .site-nav {
-    gap: 0.42rem;
-  }
-
-  .nav-links {
-    gap: 0.48rem;
-  }
-
-  .theme-toggle span:last-child {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
   }
 }
 
