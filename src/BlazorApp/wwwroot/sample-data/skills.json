@@ -1,79 +1,93 @@
 [
   {
-    "title": "Investment operations",
-    "icon": "finance",
-    "description": "Pricing, performance and capital controls for systematic funds, combining financial analysis with technical investigation.",
-    "skills": [
-      "Bloomberg market data",
-      "P&L analysis",
-      "Fund reconciliation",
-      "Custodian / administrator controls",
-      "Trading capital rebalancing",
-      "Master / feeder structures"
-    ]
-  },
-  {
-    "title": "Commodity pricing",
-    "icon": "finance",
-    "description": "Physical and exchange-linked pricing, valuation and market-data controls at Louis Dreyfus Company.",
-    "skills": [
-      "Physical commodity pricing",
-      "Cash / futures curves",
-      "Basis, freight & FX",
-      "Futures & options",
-      "Mark-to-market valuation",
-      "P&L & risk data"
-    ]
-  },
-  {
-    "title": "Data & automation",
+    "title": "Python & Financial Data Automation",
     "icon": "data",
-    "description": "Querying, scripting and analysis to find discrepancies and make recurring work repeatable.",
+    "description": "Python-based financial data processing, reporting and workflow automation using Pandas, APIs, Linux and structured transformations.",
     "skills": [
       "Python",
-      "SQL",
-      "Oracle PL/SQL",
-      "PowerShell",
-      "Excel",
-      "Reporting & validation"
+      "Pandas / DataFrames",
+      "REST APIs & data integration",
+      "Linux",
+      "Excel automation",
+      "Financial data transformation",
+      "HTML report generation",
+      "Streamlit"
     ]
   },
   {
-    "title": "Web & product development",
-    "icon": "commerce",
-    "description": "End-to-end web delivery, backed by a live Django storefront and this Blazor portfolio.",
+    "title": "Databases & Production Systems",
+    "icon": "systems",
+    "description": "Relational and time-series data, enterprise applications and operational support across production trading workflows.",
     "skills": [
-      "Django 5.1",
+      "Microsoft SQL Server",
+      "SQL",
+      "Oracle PL/SQL",
+      "Time-series databases / RTDB",
+      "Application Support",
+      "Production troubleshooting",
+      "Data validation",
+      "System integration"
+    ]
+  },
+  {
+    "title": "Systematic Trading & Investment Operations",
+    "icon": "finance",
+    "description": "Controls and reporting for systematic investment businesses: fund valuation, performance analysis, exposure monitoring and financial reconciliation.",
+    "skills": [
+      "Systematic Trading",
+      "Quantitative Investment Operations",
+      "P&L Analysis",
+      "NAV & Fund Valuation",
+      "Notional Exposure",
+      "Bloomberg Terminal",
+      "OTC Derivatives",
+      "Fund Administrator Reconciliation",
+      "Market Data Quality",
+      "Corporate Actions"
+    ]
+  },
+  {
+    "title": "Commodity Pricing & Middle Office",
+    "icon": "finance",
+    "description": "Agricultural commodity pricing and ZEMA market-data controls across physical and exchange-linked markets.",
+    "skills": [
+      "Physical commodity pricing",
+      "Cash & futures curves",
+      "Basis & premiums",
+      "Freight & FX components",
+      "Futures & options",
+      "Mark-to-market valuation",
+      "Pricing data governance",
+      "Reconciliation & risk controls"
+    ]
+  },
+  {
+    "title": "Web & Product Delivery",
+    "icon": "commerce",
+    "description": "Development and operation of production web applications, from customer workflows and databases to hosting and deployment.",
+    "skills": [
+      "Django",
       "Blazor WebAssembly",
       "HTML / CSS / JavaScript",
       "MariaDB / MySQL",
-      "GitHub Actions / Azure",
-      "SuperHosting / cPanel"
+      "GitHub Actions",
+      "Azure Static Web Apps",
+      "SuperHosting / cPanel",
+      "E-commerce workflows"
     ]
   },
   {
-    "title": "Application support",
-    "icon": "support",
-    "description": "Production investigation and user support across finance, engineering, healthcare and business services.",
-    "skills": [
-      "Production diagnostics",
-      "Monitoring",
-      "Incident investigation",
-      "Access administration",
-      "Stakeholder communication",
-      "Technical documentation"
-    ]
-  },
-  {
-    "title": "AI-assisted development",
+    "title": "Software Engineering & AI Automation",
     "icon": "automation",
-    "description": "Daily use of AI tools and coding agents in development, analysis and delivery workflows.",
+    "description": "AI-assisted engineering with code review, testing and documentation for maintainable applications and repeatable operational workflows.",
     "skills": [
+      "AI-assisted coding",
       "Coding agents",
       "Code review",
+      "Testing",
       "Refactoring",
-      "Rapid prototyping",
-      "Documentation",
+      "API-driven applications",
+      "Technical documentation",
       "Workflow automation"
     ]
   }

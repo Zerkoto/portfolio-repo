@@ -1,6 +1,6 @@
 {
-  "introduction": "I work where financial analysis and technology meet: understanding how a number is produced, investigating discrepancies and tracing issues through the systems behind it.",
-  "evidence": "My background spans systematic investment operations at Man Group, commodity pricing at Louis Dreyfus Company and production application support. Alongside those roles, I designed, built and continue to run Neutron.bg, a live Django e-commerce platform.",
+  "introduction": "I am a finance-oriented technology professional with experience in systematic investment management, commodity pricing, software engineering and business-critical application support. My background includes Man Group's quantitative investment operations, Louis Dreyfus Company's pricing environment and independent development of production web applications.",
+  "evidence": "I use Python, Pandas, SQL, APIs and automation tools to process financial data, produce operational reports, investigate valuation and reconciliation differences, and streamline repetitive work. I am particularly interested in systems where dependable technology, accurate financial information and efficient processes directly influence business outcomes.",
   "highlights": [
     {
       "text": "Systematic trading fund experience at Man Group",
@@ -22,43 +22,43 @@
   ],
   "focusAreas": [
     {
-      "title": "Systematic investment operations",
+      "title": "Financial Markets & Middle Office",
       "icon": "finance",
-      "tagline": "Man Group",
-      "description": "At Man Group, I worked across the financial data and systems that underpin systematic funds, connecting pricing, performance reporting and capital rebalancing.",
+      "tagline": "Systematic trading, pricing and fund operations",
+      "description": "Experience in quantitative investment operations and agricultural commodity markets: daily P&L validation, NAV-estimation support, pricing controls, derivatives, fund reconciliations and portfolio exposure monitoring.",
       "bullets": [
-        "Pricing and performance analysis",
-        "Fund reconciliations and trading-capital controls"
+        "Systematic fund operations, fund structures, NAV, notional exposure and performance reporting",
+        "Bloomberg Terminal, OTC valuation controls including inflation-linked and variance swaps, and commodity pricing curves"
       ]
     },
     {
-      "title": "Commodity pricing",
-      "icon": "finance",
-      "tagline": "Louis Dreyfus Company",
-      "description": "Current work in agricultural commodity markets, where physical prices, exchange-traded instruments and logistics inputs meet valuation and risk reporting.",
-      "bullets": [
-        "Price curves, basis, premiums, freight and FX components",
-        "Valuation controls and collaboration with Trading, Risk and Technology"
-      ]
-    },
-    {
-      "title": "Data & automation",
+      "title": "Python, Data Engineering & Automation",
       "icon": "data",
-      "tagline": "Python · SQL · Excel",
-      "description": "I use code to investigate mismatches, validate inputs and reduce repetitive checks, with AI-assisted development supporting the build and review process.",
+      "tagline": "From raw financial data to reliable workflows",
+      "description": "Hands-on Python, Pandas, SQL, API and Linux experience retrieving, transforming, validating and consolidating financial data. I use automated Excel reporting workflows, generate HTML performance reports and operate Streamlit tools for investment operations.",
       "bullets": [
-        "SQL investigation and Python reporting tools",
-        "Repeatable validation, monitoring and operational scripts"
+        "Python/Pandas DataFrames, API integration and Excel reporting automation",
+        "Streamlit financial utilities, data retrieval, reconciliation and fund rebalancing workflows"
       ]
     },
     {
-      "title": "Product development",
-      "icon": "commerce",
-      "tagline": "Neutron.bg",
-      "description": "A live Django storefront that I designed, built and operate, from the customer journey to the administration and deployment behind it.",
+      "title": "Software Engineering & AI",
+      "icon": "automation",
+      "tagline": "Practical engineering and modern development workflows",
+      "description": "I use AI-assisted coding, testing, code review and documentation to develop maintainable solutions for web applications, data integrations, operational tooling and process automation.",
       "bullets": [
-        "Catalog, checkout, accounts and order lifecycle",
-        "Supplier workflows, administration and hosting"
+        "Python, Django, SQL, JavaScript, Blazor and API-driven applications",
+        "AI-assisted development, testing, technical documentation and workflow automation"
+      ]
+    },
+    {
+      "title": "Independent Product Development",
+      "icon": "commerce",
+      "tagline": "Live Django e-commerce: Neutron.bg",
+      "description": "I designed, built and continue to operate Neutron.bg, owning the customer storefront and the operational workflows behind a live Django e-commerce application.",
+      "bullets": [
+        "Catalog management, checkout, customer accounts, order processing and supplier workflows",
+        "Django 5.1, MariaDB/MySQL, hosting and deployment through SuperHosting/cPanel"
       ]
     }
   ]

@@ -1,16 +1,16 @@
 {
   "name": "Kristiyan Petrov",
-  "title": "Pricing Middle Office & Software Development",
-  "heroEyebrow": "Systematic funds · Commodity markets · Python & SQL",
-  "heroSummary": "Senior Pricing Middle Officer at Louis Dreyfus Company, with a background in systematic investment operations at Man Group. My work brings together pricing and performance analysis, financial controls and practical software development.",
+  "title": "Financial Technology | Investment Operations | Software Engineering & Automation",
+  "heroEyebrow": "Python & SQL | Systematic Trading | Commodity Pricing | Data Automation | AI-Assisted Development",
+  "heroSummary": "My experience spans systematic investment operations at Man Group, commodity pricing at Louis Dreyfus Company and hands-on software engineering. I use Python, Pandas, SQL, APIs and modern web technologies to process financial data, automate reporting, improve data quality and support business-critical systems.",
   "profileImage": "images/profile/kristiyan-profile.jpg",
   "profileImageAlt": "Portrait of Kristiyan Petrov",
   "proofPoints": [
-    "Systematic investment operations",
-    "Pricing & valuation",
-    "Fund control & reconciliation",
-    "Python and SQL",
-    "Live Django product"
+    "Systematic Trading & Hedge Funds",
+    "Python, Pandas & SQL",
+    "Pricing, P&L & NAV",
+    "Financial Data Automation",
+    "Software Engineering & AI"
   ],
   "primaryCtaLabel": "View experience",
   "primaryCtaHref": "#experience",

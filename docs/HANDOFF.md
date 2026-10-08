@@ -21,6 +21,24 @@ Read the newest entry first when resuming work. Git history remains the authorit
 
 ## Change Log
 
+### 2026-10-08 - Existing Azure Preview Publication Authorized
+
+- The user subsequently requested updating the existing PR #6 Azure preview with the reviewed financial-automation content. This authorizes the preview deployment; production publication and merging still require separate approval.
+- Publish the reviewed local `codex/financial-automation-content` changes to the existing PR head `codex/portfolio-recruiter-polish`, which was rechecked at `48b3c8a` before publication. A normal fast-forward push invokes the unchanged Azure pull-request workflow and retains the existing preview URL.
+- Reviewed source and local Release verification remain the content-refinement batch described below. No further public copy, design, dependency, hosting or workflow changes accompany this publication.
+- Verify the deployment workflow and hosted JSON/browser rendering after publication. Review artifacts stay under `/workspace/scratch/portfolio-financial-content/` outside the repository.
+
+### 2026-10-08 - Financial Data Automation Content Review
+
+- Inspected the latest PR #6 branch/head `48b3c8a` and its deployed Azure preview before editing; did not restore older `main` copy. Created local review branch `codex/financial-automation-content` from that head.
+- Refined all four portfolio content JSON sources, small component labels/intro copy, page/SEO/structured data and the content cache version (`20261008-financial-automation`). Python/Pandas, APIs, Linux, Streamlit, financial reporting and approximately 100 fund-level Excel inputs now have explicit evidence. Man Group uses the user's requested leading alternative-manager description and confirmed Man AHL/Man Numeric business scope; existing role titles are preserved.
+- Kept four Man Group highlights and six Skills cards, distinguishing investment operations from LDC commodity pricing/ZEMA/governance. Preserved Neutron.bg and the remaining five Experience entries. No CSS, JavaScript, visual assets, dependencies, hosting or workflow changes.
+- `docs/CONTENT_SOURCES.md` now records the user's firsthand confirmation and separates it from related-role research. Do not infer ownership of all scripts/tools, quantitative strategy design, independent OTC pricing or investment authority; keep NAV, trading capital (GAV) and notional exposure distinct.
+- Verified solution build (zero warnings/errors), Release publish, JSON/JSON-LD parsing, diff checks, required keyword coverage and Chromium at 320–2560px in both themes. No clipping/overflow or browser/application-request errors. Checked row/link alignment, menu/Escape, theme persistence, skip navigation and local section targets. Existing external URLs are unchanged.
+- Local Release preview runs at `http://127.0.0.1:5090/` during this session. Review artifacts are under `/workspace/scratch/portfolio-financial-content/`; generated files remain outside the repository.
+- **The user explicitly requires approval before any deployment or merge.** This batch has not been pushed, deployed or merged. The existing [PR #6 Azure preview](https://ashy-pebble-014ec8203-6.westeurope.3.azurestaticapps.net/) still shows the previous approved-to-preview batch. Do not push this work to the open PR branch or open another deployment-triggering PR before approval.
+- Social-preview artwork still contains the older embedded subtitle; leave the approved artwork and .NET 10 migration for separate work.
+
 ### 2026-10-08 - Recruiter Copy And Responsive UI Polish
 
 - Rewrote portfolio JSON, component headings, footer and metadata around confirmed systematic-fund responsibilities at Man Group alongside current LDC pricing and technical delivery. Man Group wording uses the verified qualifier `publicly listed`; scope includes Bloomberg pricing, P&L, custodian/FA tie-outs and the user's described feeder GAV/master NAV structure.

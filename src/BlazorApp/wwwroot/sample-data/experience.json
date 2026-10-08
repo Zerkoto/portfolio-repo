@@ -6,29 +6,29 @@
     "sector": "Global agricultural commodity merchandising, processing and logistics",
     "title": "Louis Dreyfus Company",
     "icon": "finance",
-    "description": "Support pricing and valuation across agricultural commodity operations, connecting physical market inputs with financial controls and downstream P&L and risk reporting.",
+    "description": "Support global agricultural commodity pricing operations at Louis Dreyfus Company, working across market-data quality, pricing curves, valuation controls and the technology supporting physical and exchange-linked trading. Combine financial analysis with Python, SQL and workflow automation to improve pricing-data reliability and operational efficiency.",
     "highlights": [
-      "Validate pricing across physical commodities, cash markets, futures and options",
-      "Check price curves, completeness, units and instrument mappings",
-      "Reconcile data with Trading, Market Risk, Credit Risk and Technology teams",
-      "Use Excel and Python to improve manual pricing and reporting workflows"
+      "Validate ZEMA market data and cash/futures curves, including basis, premiums, freight and FX components",
+      "Check physical commodity, futures and options pricing inputs supporting mark-to-market valuation",
+      "Investigate pricing discrepancies and reconcile data with Trading, Market Risk, Credit Risk and Technology teams",
+      "Use Python, SQL and Excel for pricing-data analysis, governance checks and workflow improvement"
     ],
     "url": "https://www.ldc.com/",
     "linkLabel": "Visit Louis Dreyfus Company"
   },
   {
-    "category": "Systematic Funds",
+    "category": "Systematic Investment Management",
     "company": "Man Group",
     "role": "Middle Office Financial Analyst and Application Support",
-    "sector": "Systematic trading and alternative investment management",
+    "sector": "Quantitative Investment Management & Hedge Funds",
     "title": "Man Group",
     "icon": "finance",
-    "description": "Combined investment operations, product control and application support for systematic funds at Man Group, the world's largest publicly listed hedge fund manager.",
+    "description": "Worked across production trading technology and Middle Office operations at Man Group, one of the world's leading publicly listed alternative investment managers. Supported systematic investment businesses including Man AHL and Man Numeric, combining front-to-back trading systems expertise with Python-based financial automation, market-data validation, fund valuation, P&L analysis and reconciliation.",
     "highlights": [
-      "Analyzed Bloomberg and internal pricing data alongside fund P&L to investigate valuation and reporting discrepancies",
-      "Reconciled financial records with custodians and fund administrators, investigating breaks between internal and external reporting",
-      "Rebalanced notional trading capital (GAV) against NAV across master–feeder structures, keeping trading levels aligned with fund capital",
-      "Used Python and SQL to investigate financial-data issues and support Middle Office applications and reporting"
+      "Supported front-to-back proprietary trading platforms, investigating strategy, fund, order, market-data and reconciliation workflows using Microsoft SQL Server and time-series databases",
+      "Used Python and Pandas on Linux to retrieve API data, transform financial records and consolidate approximately 100 fund-level Excel inputs into standardized reconciliation workbooks",
+      "Produced daily T−1 P&L and HTML performance reports for senior stakeholders, checking pricing inputs against Bloomberg Terminal and investigating valuation discrepancies",
+      "Supported NAV estimation, trading-capital (GAV) rebalancing and notional exposure monitoring across master–feeder funds; reconciled internal records with custodians and fund administrators"
     ],
     "url": "https://www.man.com/",
     "linkLabel": "Visit Man Group"

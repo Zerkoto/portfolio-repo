@@ -2,7 +2,7 @@
 
 Public portfolio website for [https://www.kpetrov.z.bg/](https://www.kpetrov.z.bg/).
 
-This repository began as GitHub Education's .NET Blazor portfolio template. It is now a custom portfolio focused on systematic fund operations at Man Group, commodity pricing at Louis Dreyfus Company, software development, application support, automation and independent e-commerce product delivery.
+This repository began as GitHub Education's .NET Blazor portfolio template. It is now a custom portfolio combining systematic investment operations at Man Group, commodity pricing at Louis Dreyfus Company, Python/Pandas financial data automation, SQL/API integration, software engineering and independent e-commerce product delivery.
 
 ## Start Here
 
