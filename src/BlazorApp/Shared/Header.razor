@@ -1,13 +1,18 @@
 @inject IJSRuntime JS
 
 <header class="site-header">
-    <nav class="site-nav shell" aria-label="Primary">
+    <nav class="site-nav shell" aria-label="Primary" @onkeydown="HandleMenuKey">
         <a class="brand" href="#home" aria-label="Kristiyan Petrov - Home">KP</a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+        <button class="menu-toggle" type="button" aria-controls="section-navigation"
+                aria-expanded="@(_menuOpen ? "true" : "false")" @onclick="ToggleMenu">
+            <span class="menu-mark" aria-hidden="true"></span>
+            <span>@(_menuOpen ? "Close" : "Menu")</span>
+        </button>
+        <div class="nav-links" id="section-navigation" data-open="@(_menuOpen ? "true" : "false")">
+            <a href="#about" @onclick="CloseMenu">About</a>
+            <a href="#skills" @onclick="CloseMenu">Skills</a>
+            <a href="#experience" @onclick="CloseMenu">Experience</a>
+            <a href="#contact" @onclick="CloseMenu">Contact</a>
         </div>
         <button class="theme-toggle"
                 type="button"
@@ -22,6 +27,19 @@
 
 @code {
     private bool _isDark = true;
+    private bool _menuOpen;
+
+    private void ToggleMenu() => _menuOpen = !_menuOpen;
+    private void CloseMenu() => _menuOpen = false;
+
+    private async Task HandleMenuKey(KeyboardEventArgs args)
+    {
+        if (_menuOpen && args.Key == "Escape")
+        {
+            CloseMenu();
+            await JS.InvokeVoidAsync("portfolioNavigation.focusMenuButton");
+        }
+    }
 
     private string ThemeText => _isDark ? "Light" : "Dark";
     private string ThemeButtonLabel => _isDark ? "Switch to light theme" : "Switch to dark theme";

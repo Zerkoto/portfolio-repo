@@ -2,7 +2,7 @@
 
 Public portfolio website for [https://www.kpetrov.z.bg/](https://www.kpetrov.z.bg/).
 
-This repository began as GitHub Education's .NET Blazor portfolio template. It is now a custom portfolio focused on commodity pricing, Middle Office, software development, application support, automation and independent e-commerce product delivery.
+This repository began as GitHub Education's .NET Blazor portfolio template. It is now a custom portfolio combining systematic investment operations at Man Group, commodity pricing at Louis Dreyfus Company, Python/Pandas financial data automation, SQL/API integration, software engineering and independent e-commerce product delivery.
 
 ## Start Here
 
@@ -33,6 +33,8 @@ The hero uses an optimized profile portrait at `src/BlazorApp/wwwroot/images/pro
 - Optional light theme: silver-toned surfaces with green highlights.
 - Theme preference persists in local browser storage and initially follows the system color preference.
 - Stable keyboard-accessible navigation, visible focus treatment and reduced-motion support.
+- Mobile navigation uses an expandable menu; the hero leads with career information before the portrait on smaller screens.
+- Six Skills cards use three columns on desktop, two on tablets and one on phones. Card content aligns across each row using CSS subgrid, with a flex fallback for older browsers.
 - Public-facing copy should remain factual, confident, and privacy-conscious; do not add unverified metrics, confidential operational detail, or unsupported employment claims.
 
 ## Run Locally

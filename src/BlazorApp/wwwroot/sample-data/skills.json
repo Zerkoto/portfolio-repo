@@ -1,67 +1,94 @@
 [
   {
-    "title": "AI-Assisted Development",
-    "icon": "automation",
-    "description": "Daily use of AI tools and coding agents to accelerate development, analysis, documentation and delivery.",
-    "skills": [
-      "AI agents",
-      "Prompting",
-      "Code review",
-      "Rapid prototyping",
-      "Technical documentation"
-    ]
-  },
-  {
-    "title": "Development, Support And Results",
-    "icon": "support",
-    "description": "Developer-minded production habits for environments where reliability, user outcomes and clear communication matter.",
-    "skills": [
-      "Production diagnostics",
-      "Application improvement",
-      "Workflow ownership",
-      "Stakeholder communication",
-      "Delivery documentation"
-    ]
-  },
-  {
-    "title": "Data And Automation",
+    "title": "Python & Financial Data Automation",
     "icon": "data",
-    "description": "Hands-on analysis and scripting for investigation, validation and reporting.",
+    "description": "Python-based financial data processing, reporting and workflow automation using Pandas, APIs, Linux and structured transformations.",
     "skills": [
       "Python",
-      "SQL",
-      "PL/SQL",
-      "PowerShell",
-      "Excel",
-      "Monitoring and reporting"
+      "Pandas / DataFrames",
+      "REST APIs & data integration",
+      "Linux",
+      "Excel automation",
+      "Financial data transformation",
+      "HTML report generation",
+      "Streamlit"
     ]
   },
   {
-    "title": "Commodity Pricing And Middle Office",
+    "title": "Databases & Production Systems",
+    "icon": "systems",
+    "description": "Relational and time-series data, enterprise applications and operational support across production trading workflows.",
+    "skills": [
+      "Microsoft SQL Server",
+      "SQL",
+      "Oracle PL/SQL",
+      "Time-series databases / RTDB",
+      "Application Support",
+      "Production troubleshooting",
+      "Data validation",
+      "System integration"
+    ]
+  },
+  {
+    "title": "Systematic Trading & Investment Operations",
     "icon": "finance",
-    "description": "Pricing and Middle Office analysis across physical commodity markets, exchange-traded instruments, valuation, controls and downstream risk workflows.",
+    "description": "Controls and reporting for systematic investment businesses: fund valuation, performance analysis, exposure monitoring and financial reconciliation.",
+    "skills": [
+      "Systematic Trading",
+      "Quantitative Investment Operations",
+      "P&L Analysis",
+      "NAV & Fund Valuation",
+      "Notional Exposure",
+      "Bloomberg Terminal",
+      "OTC Derivatives",
+      "Fund Administrator Reconciliation",
+      "Market Data Quality",
+      "Corporate Actions"
+    ]
+  },
+  {
+    "title": "Commodity Pricing & Middle Office",
+    "icon": "finance",
+    "description": "Agricultural commodity pricing and ZEMA market-data controls across physical and exchange-linked markets.",
     "skills": [
       "Physical commodity pricing",
-      "Cash and futures curves",
-      "Basis, premiums and freight",
-      "Futures and options",
+      "Cash & futures curves",
+      "Basis & premiums",
+      "Freight & FX components",
+      "Futures & options",
       "Mark-to-market valuation",
-      "P&L and exposure analysis",
-      "Market and credit risk awareness",
-      "Reconciliations"
+      "Pricing data governance",
+      "Reconciliation & risk controls"
     ]
   },
   {
-    "title": "Web And Product Delivery",
+    "title": "Web & Product Delivery",
     "icon": "commerce",
-    "description": "A practical builder's toolkit across Blazor, Django, e-commerce and portfolio application delivery.",
+    "description": "Development and operation of production web applications, from customer workflows and databases to hosting and deployment.",
     "skills": [
+      "Django",
       "Blazor WebAssembly",
-      "Django 5.1",
-      "HTML/CSS/JavaScript",
+      "HTML / CSS / JavaScript",
+      "MariaDB / MySQL",
       "GitHub Actions",
       "Azure Static Web Apps",
-      "SuperHosting/cPanel deployment"
+      "SuperHosting / cPanel",
+      "E-commerce workflows"
+    ]
+  },
+  {
+    "title": "Software Engineering & AI Automation",
+    "icon": "automation",
+    "description": "AI-assisted engineering with code review, testing and documentation for maintainable applications and repeatable operational workflows.",
+    "skills": [
+      "AI-assisted coding",
+      "Coding agents",
+      "Code review",
+      "Testing",
+      "Refactoring",
+      "API-driven applications",
+      "Technical documentation",
+      "Workflow automation"
     ]
   }
 ]

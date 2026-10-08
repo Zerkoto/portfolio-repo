@@ -4,6 +4,51 @@ This file records meaningful project changes by date. It is not a live branch, p
 
 Use this as the durable project history for completed change batches, documented decisions, verification, and known follow-up work at the time of the change. Use `docs/HANDOFF.md` for operational next-agent context and `docs/HOSTING.md` for deployment and domain architecture.
 
+## 2026-10-08 - Financial Data Automation Content Refinement
+
+### Completed
+
+- Refined the latest recruiter-polish content around financial technology, investment operations, software engineering and automation, preserving the recently improved presentation and functionality.
+- Made Python, Pandas/DataFrames, API integration, Linux, Streamlit, Excel consolidation and HTML financial reporting explicit in the hero, About and Skills content. Retained six Skills cards and four About focus areas.
+- Used the confirmed Man Group description and four concrete highlights covering front-to-back platforms, approximately 100 fund-level Excel inputs, daily T−1 P&L/HTML reporting, Bloomberg checks, fund-capital rebalancing and external reconciliations. Distinguished NAV-estimation support, trading capital (GAV) and notional exposure; retained the existing role title.
+- Distinguished LDC's ZEMA, commodity curves, pricing-data governance and valuation controls from Man Group's systematic investment operations. Preserved Neutron.bg's Django, order/supplier, database and hosting details and the remaining five Experience entries.
+- Synchronized component copy, page titles, SEO/structured data and the JSON cache version. Updated the source notes to distinguish explicit firsthand confirmation from public role research. No CSS, layout, JavaScript, image, dependency or hosting changes.
+
+### Verification
+
+- Built the solution with zero warnings/errors and published the Release output using the pinned .NET 8.0.408 SDK. Parsed all five content JSON files and the JSON-LD block; `git diff --check` passed.
+- Verified Chromium at 320, 390, 600, 768, 1024, 1440, 1920 and 2560 pixels in both themes: no horizontal overflow, clipped content, application errors or failed application requests.
+- Confirmed eight Experience cards, six Skills cards, four About cards, matching Experience row alignment and all required technical keywords. Checked navigation, menu/Escape focus, theme persistence, keyboard skip navigation and valid local section targets; existing external destinations and role titles are unchanged.
+- Saved baseline and refined desktop, tablet and mobile screenshots for review. No deployment or merge was performed during this local content-verification batch.
+
+### Follow-Up
+
+- The user subsequently approved updating the existing Azure preview with this reviewed batch. The existing pull-request workflow remains the publication route; merging and production publication still require approval.
+- The social-preview image subtitle and .NET 10 migration remain separate follow-up work.
+
+## 2026-10-08 - Systematic Fund Experience And Responsive Card Refinement
+
+### Completed
+
+- Replaced generic, repetitive portfolio copy with a researched investment-operations and product-control narrative, supported by confirmed pricing/performance analysis, external reconciliation, trading-capital rebalancing and application-support responsibilities. Kept LDC as the first Experience entry and retained all eight employers/projects.
+- Used Man Group's official Middle Office role descriptions and biographies, plus archived related roles, to establish terminology rather than reproduce raw background notes. Recorded the source context and personal-claim boundaries in `docs/CONTENT_SOURCES.md`.
+- Described Man Group as the world's largest publicly listed hedge fund manager, supported by LSEG's interview with its CIO and Hedgeweek's July 2026 reporting. This avoids conflating publicly listed managers with all hedge funds.
+- Balanced six Skills cards across desktop/tablet/mobile grids and aligned card headings, descriptions, lists and links with CSS subgrid. Refined spacing, borders, focus states, buttons and external-link icons while preserving the approved portrait and both themes.
+- Led the mobile hero with career information; replaced tiny navigation links with an accessible expandable menu that closes after navigation or Escape and restores keyboard focus.
+- Fixed the missing scoped-stylesheet request, theme behavior when storage is unavailable, initial browser theme color, malformed hash handling, delayed-content deep links and skip-link focus. Bumped CSS/content cache versions and synchronized page/SEO copy.
+
+### Verification
+
+- Captured and visually reviewed the live site and revised Release output in Chromium, including desktop/mobile and dark/light themes.
+- Confirmed no horizontal overflow at 320, 390, 600, 768, 1024, 1440, 1920 and 2560 pixels; checked eight Experience cards, four About cards and six Skills cards.
+- Verified menu interactions, Escape/focus behavior, theme persistence, keyboard skip navigation, and direct links with a 2.2-second content delay; tested denied browser storage and malformed hashes. No browser runtime errors or failed application requests remained.
+- Parsed all portfolio JSON, ran `git diff --check`, built the solution with zero warnings/errors and published Release using the pinned .NET 8.0.408 SDK.
+
+### Follow-Up
+
+- Review the Azure preview before merging. Production hosting and workflows are unchanged.
+- The previously documented social-preview image subtitle and .NET 10 migration remain separate follow-up work.
+
 ## 2026-07-16 - LDC Commodity Pricing Experience And Portfolio Positioning
 
 ### Completed

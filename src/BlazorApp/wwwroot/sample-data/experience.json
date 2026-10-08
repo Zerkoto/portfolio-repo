@@ -6,28 +6,29 @@
     "sector": "Global agricultural commodity merchandising, processing and logistics",
     "title": "Louis Dreyfus Company",
     "icon": "finance",
-    "description": "Work at the intersection of physical commodity trading, pricing control, market data and technology, supporting reliable valuation, P&L and risk information across agricultural commodity operations.",
+    "description": "Support global agricultural commodity pricing operations at Louis Dreyfus Company, working across market-data quality, pricing curves, valuation controls and the technology supporting physical and exchange-linked trading. Combine financial analysis with Python, SQL and workflow automation to improve pricing-data reliability and operational efficiency.",
     "highlights": [
-      "Pricing and valuation controls across physical commodities, cash markets, futures, options and exchange-linked price components",
-      "Market-data and curve governance covering price completeness, metadata, units, instrument mappings and downstream data quality",
-      "Reconciliation, P&L and risk support connecting Trading, Market Risk, Credit Risk, Technology and Middle Office stakeholders",
-      "Process improvement through Excel, Python and automation-oriented analysis of manual pricing and data workflows"
+      "Validate ZEMA market data and cash/futures curves, including basis, premiums, freight and FX components",
+      "Check physical commodity, futures and options pricing inputs supporting mark-to-market valuation",
+      "Investigate pricing discrepancies and reconcile data with Trading, Market Risk, Credit Risk and Technology teams",
+      "Use Python, SQL and Excel for pricing-data analysis, governance checks and workflow improvement"
     ],
     "url": "https://www.ldc.com/",
     "linkLabel": "Visit Louis Dreyfus Company"
   },
   {
-    "category": "Finance",
+    "category": "Systematic Investment Management",
     "company": "Man Group",
     "role": "Middle Office Financial Analyst and Application Support",
-    "sector": "Global investment management",
+    "sector": "Quantitative Investment Management & Hedge Funds",
     "title": "Man Group",
     "icon": "finance",
-    "description": "Worked across Middle Office and application workflows at one of the world's largest listed hedge fund managers and global alternative investment firms, connecting financial analysis with data, pricing, valuation, P&L, reconciliations and production tooling.",
+    "description": "Worked across production trading technology and Middle Office operations at Man Group, one of the world's leading publicly listed alternative investment managers. Supported systematic investment businesses including Man AHL and Man Numeric, combining front-to-back trading systems expertise with Python-based financial automation, market-data validation, fund valuation, P&L analysis and reconciliation.",
     "highlights": [
-      "Middle Office exposure across NAV, P&L, pricing governance, valuation controls, reconciliations and portfolio operations",
-      "Trade lifecycle and financial-instrument awareness across equities, bonds, derivatives, OTC products and systematic trading concepts",
-      "Python, SQL, monitoring and analytics work connecting Operations, Technology, Risk and investment stakeholders"
+      "Supported front-to-back proprietary trading platforms, investigating strategy, fund, order, market-data and reconciliation workflows using Microsoft SQL Server and time-series databases",
+      "Used Python and Pandas on Linux to retrieve API data, transform financial records and consolidate approximately 100 fund-level Excel inputs into standardized reconciliation workbooks",
+      "Produced daily T−1 P&L and HTML performance reports for senior stakeholders, checking pricing inputs against Bloomberg Terminal and investigating valuation discrepancies",
+      "Supported NAV estimation, trading-capital (GAV) rebalancing and notional exposure monitoring across master–feeder funds; reconciled internal records with custodians and fund administrators"
     ],
     "url": "https://www.man.com/",
     "linkLabel": "Visit Man Group"
@@ -39,11 +40,11 @@
     "sector": "Postal, online payments and government services",
     "title": "Swift - Postal services",
     "icon": "systems",
-    "description": "Supported postal and online-payment services connected to government institutions, with a focus on operational continuity, transaction integrity and repeatable support processes.",
+    "description": "Kept postal and online-payment applications running for government-service users, investigating transaction issues and coordinating fixes across technical teams.",
     "highlights": [
-      "Supported front-end and back-end postal services across multiple government clients",
-      "Worked with SQL, RabbitMQ-related workflows, payment reports and audit support",
-      "Coordinated between support, delivery and development teams"
+      "Diagnosed front-end and back-end service issues across government clients",
+      "Investigated SQL data, RabbitMQ workflows and payment reports",
+      "Prepared audit support and coordinated fixes with delivery and development teams"
     ],
     "url": "https://www.maltapost.com/",
     "linkLabel": "Visit MaltaPost"
@@ -55,11 +56,11 @@
     "sector": "Automotive engineering and strategic consulting",
     "title": "Ricardo",
     "icon": "support",
-    "description": "Supported SharePoint on-premise environments and operational tooling for a global engineering client, balancing system administration, access control, database work and issue resolution.",
+    "description": "Supported on-premise SharePoint environments for a global engineering client, resolving access, infrastructure and database issues across regional server farms.",
     "highlights": [
-      "Supported SharePoint environments across UK, USA and China server farms",
+      "Supported SharePoint server farms in the UK, USA and China",
       "Worked with permissions, backups, firewall rules, SQL jobs and stored procedures",
-      "Created operational scripts to resolve recurring issues"
+      "Wrote operational scripts for recurring issues"
     ],
     "url": "https://www.ricardo.com/en",
     "linkLabel": "Visit Ricardo"
@@ -71,11 +72,11 @@
     "sector": "Electronic invoicing marketplace",
     "title": "Tungsten Network",
     "icon": "data",
-    "description": "Supported supplier and buyer invoicing workflows across web, back-end and data-mapping processes, combining application investigation with database and operational support.",
+    "description": "Investigated supplier-to-buyer invoicing issues across web portals, back-end applications and data mappings in an electronic invoicing network.",
     "highlights": [
-      "Provided TechOps support for web portals and back-end applications",
-      "Investigated supplier-buyer configuration and invoicing data issues",
-      "Used Oracle PL/SQL, Perl scripts and monitoring tools in support workflows"
+      "Provided TechOps support for portals and back-end services",
+      "Traced configuration and data-mapping issues through invoicing workflows",
+      "Used Oracle PL/SQL, Perl scripts and monitoring tools for diagnosis"
     ],
     "url": "https://www.tungstenautomation.com/products/einvoice-network",
     "linkLabel": "Visit Tungsten Network"
@@ -87,11 +88,11 @@
     "sector": "Healthcare web applications",
     "title": "Carebuilder",
     "icon": "delivery",
-    "description": "Contributed to healthcare web and portal work while also supporting development operations, QA habits and user-facing application quality.",
+    "description": "Contributed to healthcare web and portal features, pairing development with QA and application administration for hospital and client users.",
     "highlights": [
       "Worked on healthcare websites and customer manual modules",
-      "Supported healthcare products for hospitals and client users",
-      "Combined web development, QA testing and application administration"
+      "Supported hospital and customer-facing healthcare products",
+      "Combined web development with QA testing and application administration"
     ],
     "url": "https://www.carebuilder.com/",
     "linkLabel": "Visit Carebuilder"
@@ -103,11 +104,11 @@
     "sector": "Pharmaceutical applications and field operations",
     "title": "AbbVie",
     "icon": "support",
-    "description": "Supported pharmaceutical business users and corporate applications with disciplined helpdesk, access, device and CRM support practices.",
+    "description": "Resolved device, access and business-application issues for pharmaceutical users, including the CRM tools used by healthcare representatives.",
     "highlights": [
-      "Provided 1st level support through ServiceNow and phone channels",
-      "Supported Windows, Apple, VPN, Office 365, Salesforce and Veeva CRM use cases",
-      "Maintained knowledge records and support documentation for healthcare representatives"
+      "Delivered first-line support through ServiceNow and phone channels",
+      "Troubleshot Windows, Apple, VPN, Office 365, Salesforce and Veeva CRM",
+      "Maintained knowledge records and user support documentation"
     ],
     "url": "https://www.abbvie.com/",
     "linkLabel": "Visit AbbVie"
@@ -119,11 +120,11 @@
     "sector": "Full-stack product development and e-commerce",
     "title": "Neutron.bg",
     "icon": "commerce",
-    "description": "Designed, built and continue to operate a live Django e-commerce platform, turning commercial requirements into a dependable customer and administration experience.",
+    "description": "Designed, built and operate a live Django e-commerce platform, owning both the customer storefront and the workflows behind each order.",
     "highlights": [
-      "End-to-end product delivery across catalog, cart, checkout, customer accounts and administration",
-      "Operational ownership of order-lifecycle and supplier-submission workflows",
-      "Deployment and hosting practices across Django 5.1, MariaDB/MySQL and SuperHosting/cPanel"
+      "Delivered catalog, cart, checkout, customer accounts and administration",
+      "Designed order-lifecycle and supplier-submission workflows",
+      "Manage Django 5.1 deployment with MariaDB/MySQL and SuperHosting/cPanel"
     ],
     "url": "https://www.neutron.bg/",
     "linkLabel": "Visit Neutron.bg"

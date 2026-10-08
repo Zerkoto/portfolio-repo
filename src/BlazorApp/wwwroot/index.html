@@ -4,31 +4,38 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kristiyan Petrov | Developer, Commodity Pricing Middle Office &amp; AI Automation</title>
-    <meta name="description" content="Kristiyan Petrov is a Senior Pricing Middle Officer and developer combining commodity pricing, Python, SQL and AI-assisted automation across physical markets." />
+    <title>Kristiyan Petrov | Financial Technology, Investment Operations &amp; Automation</title>
+    <meta name="description" content="Kristiyan Petrov combines systematic investment operations, commodity pricing and Python, Pandas, SQL and API-driven financial automation with software engineering." />
     <meta name="theme-color" content="#0c0d0f" />
     <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Kristiyan Petrov | Developer, Commodity Pricing Middle Office &amp; AI Automation" />
-    <meta property="og:description" content="Commodity pricing, physical and futures markets, AI-assisted development, Python, SQL, P&amp;L and risk controls." />
+    <meta property="og:title" content="Kristiyan Petrov | Financial Technology, Investment Operations &amp; Automation" />
+    <meta property="og:description" content="Man Group systematic investment operations and Louis Dreyfus Company pricing, with Python/Pandas automation, API integration, financial reporting and software engineering." />
     <meta property="og:url" content="https://www.kpetrov.z.bg/" />
     <meta property="og:image" content="https://www.kpetrov.z.bg/images/kristiyan-og-card.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Kristiyan Petrov - Developer, Commodity Pricing Middle Office and AI-Assisted Automation" />
+    <meta property="og:image:alt" content="Kristiyan Petrov portfolio social preview with portrait" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://www.kpetrov.z.bg/images/kristiyan-og-card.jpg" />
     <link rel="canonical" href="https://www.kpetrov.z.bg/" />
     <base href="/" />
     <script>
         (function () {
-            const storedTheme = localStorage.getItem("portfolio-theme");
+            let storedTheme;
+            try {
+                storedTheme = localStorage.getItem("portfolio-theme");
+            } catch {
+                // Storage may be disabled; the theme still works for this visit.
+            }
             const preferredTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
-            document.documentElement.dataset.theme = storedTheme || preferredTheme;
+            const theme = storedTheme === "light" || storedTheme === "dark" ? storedTheme : preferredTheme;
+            document.documentElement.dataset.theme = theme;
+            document.querySelector('meta[name="theme-color"]')
+                .setAttribute("content", theme === "dark" ? "#0c0d0f" : "#f4f5f2");
         }());
     </script>
-    <link href="css/app.css?v=20260617-hero-portrait-flip" rel="stylesheet" />
+    <link href="css/app.css?v=20261008-recruiter-polish" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="BlazorApp.styles.css" rel="stylesheet" />
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -55,10 +62,25 @@
               "Futures and options",
               "Mark-to-market valuation",
               "P&L and risk controls",
-              "Investment operations",
-              "Application support",
+              "Systematic trading fund operations",
+              "Bloomberg Terminal and market-data quality",
+              "Fund P&L reporting",
+              "Custodian and fund administrator reconciliations",
+              "NAV estimation and fund valuation",
+              "Notional exposure monitoring and fund capital rebalancing",
+              "Master and feeder fund structures",
+              "OTC derivatives and corporate actions",
+              "Front-to-back trading application support",
               "Python",
+              "Pandas and DataFrames",
               "SQL",
+              "Microsoft SQL Server and time-series databases",
+              "REST APIs and data integration",
+              "Linux",
+              "Streamlit operational tools",
+              "Excel reporting automation",
+              "HTML performance reporting",
+              "ZEMA market data",
               "Middle Office",
               "Process automation",
               "Django e-commerce",
@@ -92,7 +114,11 @@
             toggle: function () {
                 const nextTheme = this.isDark() ? "light" : "dark";
                 document.documentElement.dataset.theme = nextTheme;
-                localStorage.setItem("portfolio-theme", nextTheme);
+                try {
+                    localStorage.setItem("portfolio-theme", nextTheme);
+                } catch {
+                    // Keep the selected theme even when persistence is unavailable.
+                }
                 document.querySelector('meta[name="theme-color"]')
                     .setAttribute("content", nextTheme === "dark" ? "#0c0d0f" : "#f4f5f2");
                 return nextTheme === "dark";
@@ -100,36 +126,89 @@
         };
 
         window.portfolioNavigation = {
+            focusMainContent: function () {
+                const main = document.getElementById("main-content");
+                main?.focus({ preventScroll: true });
+                main?.scrollIntoView({ block: "start" });
+            },
+            focusMenuButton: function () {
+                document.querySelector(".menu-toggle")?.focus();
+            },
             scrollToCurrentHash: function () {
+                if (this.stopRestoration) {
+                    this.stopRestoration();
+                }
                 const requestedHash = window.location.hash;
-                const targetId = decodeURIComponent(requestedHash.replace(/^#/, ""));
-                if (!targetId) {
+                let targetId;
+                try {
+                    targetId = decodeURIComponent(requestedHash.replace(/^#/, ""));
+                } catch {
+                    return;
+                }
+                const app = document.getElementById("app");
+                if (!targetId || !app) {
                     return;
                 }
 
+                let frame;
+                let timer;
+                let lastTargetPosition;
+                let stopped = false;
+                const cancelEvents = ["pointerdown", "wheel", "touchstart", "keydown"];
+                const observer = new MutationObserver(function () {
+                    window.cancelAnimationFrame(frame);
+                    frame = window.requestAnimationFrame(alignTarget);
+                });
+
+                const stopRestoration = function () {
+                    stopped = true;
+                    observer.disconnect();
+                    window.cancelAnimationFrame(frame);
+                    window.clearTimeout(timer);
+                    cancelEvents.forEach(function (name) {
+                        document.removeEventListener(name, stopRestoration, true);
+                    });
+                    window.removeEventListener("hashchange", stopRestoration);
+                };
+
                 const alignTarget = function () {
+                    if (stopped) {
+                        return;
+                    }
                     if (window.location.hash !== requestedHash) {
+                        stopRestoration();
                         return;
                     }
 
                     const target = document.getElementById(targetId);
                     if (target) {
-                        target.scrollIntoView({ block: "start" });
+                        const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+                        if (targetPosition !== lastTargetPosition) {
+                            target.scrollIntoView({ block: "start", behavior: "instant" });
+                            lastTargetPosition = targetPosition;
+                        }
+                    }
+
+                    // Sections load independently. Keep the anchor aligned until
+                    // all content has rendered, including on slower connections.
+                    const contentReady = [".hero-grid", ".focus-grid", ".skills-grid", ".experience-grid", ".contact-links"]
+                        .every(function (selector) { return app.querySelector(selector); });
+                    if (contentReady) {
+                        stopRestoration();
                     }
                 };
 
-                alignTarget();
-
-                const observer = new MutationObserver(alignTarget);
-                observer.observe(document.getElementById("app"), {
+                this.stopRestoration = stopRestoration;
+                cancelEvents.forEach(function (name) {
+                    document.addEventListener(name, stopRestoration, { capture: true, passive: true });
+                });
+                window.addEventListener("hashchange", stopRestoration);
+                observer.observe(app, {
                     childList: true,
                     subtree: true
                 });
-
-                window.setTimeout(function () {
-                    alignTarget();
-                    observer.disconnect();
-                }, 1000);
+                timer = window.setTimeout(stopRestoration, 30000);
+                frame = window.requestAnimationFrame(alignTarget);
             }
         };
 
